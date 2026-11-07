@@ -13,7 +13,7 @@ export const foods = [
   { name:'Gazpacho', origin:'Andalusia', text:'A refreshing chilled soup made with ripe tomatoes and vegetables.', image:'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85' },
   { name:'Churros con chocolate', origin:'Across Spain', text:'Crisp fried dough pastries traditionally enjoyed with a cup of thick hot chocolate.', image:'https://images.unsplash.com/photo-1624371414361-e670edf4898d?auto=format&fit=crop&w=900&q=85' },
   { name:'Patatas bravas', origin:'Across Spain', text:'Golden potato pieces served with a bold brava sauce; a much-loved tapa.', image:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85' },
-  { name:'Pintxos', origin:'Basque Country', text:'Small, creative bites often served on bread and enjoyed in lively bars.', image:'https://images.unsplash.com/photo-1547592180-86f3f1e1f6f4?auto=format&fit=crop&w=900&q=85' }
+  { name:'Pintxos', origin:'Basque Country', text:'Small, creative bites often served on bread and enjoyed in lively bars.', image:'https://images.unsplash.com/photo-1547592180-85f173990554' }
 ];
 
 export const festivals = [
