@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import "./SpanishAILab.css";
 
@@ -24,7 +23,6 @@ const dictionary = {
   una: ["a / an", "Article", "Feminine singular"],
   nosotros: ["we", "Pronoun", "Subject"],
   nosotras: ["we", "Pronoun", "Subject"],
-  vosotros: ["you all", "Pronoun", "Subject"],
   vosotros: ["you all", "Pronoun", "Subject"],
   ellos: ["they", "Pronoun", "Subject"],
   ellas: ["they", "Pronoun", "Subject"],
@@ -96,7 +94,6 @@ function detectWord(word) {
 
   if (dictionary[key]) {
     const [meaning, type, detail] = dictionary[key];
-
     return { word, meaning, type, detail };
   }
 
@@ -109,7 +106,8 @@ function detectWord(word) {
 }
 
 function analyzeSentence(sentence) {
-  const words = sentence.trim().match(/[¿¡]?[\p{L}áéíóúüñÁÉÍÓÚÜÑ]+[.,!?;:]?/gu) || [];
+  const words =
+    sentence.trim().match(/[¿¡]?[\p{L}áéíóúüñÁÉÍÓÚÜÑ]+[.,!?;:]?/gu) || [];
 
   return words.map(detectWord);
 }
@@ -146,17 +144,57 @@ export default function SpanishAILab() {
   const [activeTab, setActiveTab] = useState("analysis");
   const [speechMessage, setSpeechMessage] = useState("");
 
+  // Gemini AI states
+  const [aiReply, setAiReply] = useState("");
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiError, setAiError] = useState("");
+
   const tokens = analyzeSentence(analyzed);
   const translation = translateSentence(analyzed, tokens);
+
   const unknownCount = tokens.filter(
     (token) => token.type === "Unknown"
   ).length;
 
-  const analyze = () => {
-    if (!sentence.trim()) return;
-    setAnalyzed(sentence.trim());
+  // Connect to Gemini backend
+  const analyze = async () => {
+    if (!sentence.trim() || aiLoading) return;
+
+    const message = sentence.trim();
+
+    setAnalyzed(message);
     setActiveTab("analysis");
     setSpeechMessage("");
+    setAiReply("");
+    setAiError("");
+    setAiLoading(true);
+
+    try {
+      const response = await fetch("/api/spanish-ai", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Something went wrong.");
+      }
+
+      setAiReply(data.reply || "No response received from Gemini.");
+    } catch (error) {
+      console.error("Gemini connection error:", error);
+      setAiError(
+        error.message || "Unable to connect to the Spanish AI tutor."
+      );
+    } finally {
+      setAiLoading(false);
+    }
   };
 
   const speak = () => {
@@ -190,13 +228,16 @@ export default function SpanishAILab() {
           <div className="ai-brand">
             <div className="ai-brand-icon">✳</div>
             <div>
-              <h2>ESPAÑOL<span>.AI</span></h2>
+              <h2>
+                ESPAÑOL<span>.AI</span>
+              </h2>
               <small>CASTILIAN LANGUAGE LAB</small>
             </div>
           </div>
 
           <span className="ai-live-status">
-            <i /> LOCAL ENGINE ONLINE
+            <i />
+            GEMINI AI TUTOR
           </span>
         </header>
 
@@ -221,17 +262,20 @@ export default function SpanishAILab() {
             <strong>50+</strong>
             <span>Example word forms</span>
           </div>
+
           <div className="ai-stat">
             <strong>5</strong>
             <span>Practice sentences</span>
           </div>
+
           <div className="ai-stat">
             <strong>ES</strong>
             <span>Spanish language</span>
           </div>
+
           <div className="ai-stat">
-            <strong>LIVE</strong>
-            <span>Grammar analysis</span>
+            <strong>AI</strong>
+            <span>Gemini tutor</span>
           </div>
         </div>
 
@@ -248,6 +292,7 @@ export default function SpanishAILab() {
 
           <div className="ai-presets">
             <span>⚡ PRESETS</span>
+
             {presets.map((item, index) => (
               <button
                 key={item}
@@ -256,6 +301,8 @@ export default function SpanishAILab() {
                   setSentence(item);
                   setAnalyzed(item);
                   setActiveTab("analysis");
+                  setAiReply("");
+                  setAiError("");
                 }}
               >
                 {index + 1}. {item}
@@ -275,16 +322,22 @@ export default function SpanishAILab() {
               maxLength={200}
             />
 
-            <button onClick={analyze} className="ai-analyze-button">
-              ANALYZE →
+            <button
+              onClick={analyze}
+              className="ai-analyze-button"
+              disabled={aiLoading || !sentence.trim()}
+            >
+              {aiLoading ? "THINKING..." : "ANALYZE →"}
             </button>
           </div>
 
           <div className="ai-actions">
             <button onClick={speak}>🔊 SPEAK SPANISH</button>
+
             <button onClick={stopSpeech} className="ai-stop-button">
               ■ STOP
             </button>
+
             <span>{speechMessage}</span>
           </div>
 
@@ -295,6 +348,7 @@ export default function SpanishAILab() {
             >
               WORD ANALYSIS
             </button>
+
             <button
               className={activeTab === "translation" ? "tab-active" : ""}
               onClick={() => setActiveTab("translation")}
@@ -305,6 +359,7 @@ export default function SpanishAILab() {
 
           {activeTab === "analysis" ? (
             <div className="ai-results">
+
               <div className="ai-token-panel">
                 <div className="ai-panel-top">
                   <span>LIVE TOKENIZATION & POS TAGGING</span>
@@ -365,10 +420,10 @@ export default function SpanishAILab() {
                 </strong>
 
                 <span className="diagnostic-note">
-                  Demo grammar engine. Results are
-                  dictionary-based, not AI-generated.
+                  Local dictionary analysis. Gemini's explanation appears below.
                 </span>
               </aside>
+
             </div>
           ) : (
             <div className="ai-translation-panel">
@@ -378,6 +433,33 @@ export default function SpanishAILab() {
               <strong>{analyzed}</strong>
             </div>
           )}
+
+          {/* Gemini AI response */}
+          <div className="ai-translation-panel">
+            <span>✳ GEMINI SPANISH TUTOR</span>
+
+            {aiLoading && (
+              <h3>Gemini is thinking...</h3>
+            )}
+
+            {aiError && (
+              <p role="alert">{aiError}</p>
+            )}
+
+            {aiReply && (
+              <div>
+                <h3>{aiReply}</h3>
+              </div>
+            )}
+
+            {!aiLoading && !aiError && !aiReply && (
+              <p>
+                Enter a Spanish sentence and click ANALYZE
+                to receive an explanation from Gemini.
+              </p>
+            )}
+          </div>
+
         </div>
 
         <footer className="ai-lab-footer">
@@ -389,3 +471,4 @@ export default function SpanishAILab() {
     </section>
   );
 }
+
