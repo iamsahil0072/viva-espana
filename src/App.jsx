@@ -23,6 +23,9 @@ function ScrollReveal(){
       '.main-content .home-festival-card',
       '.main-content .vocab-card',
       '.main-content .quiz-panel',
+      '.main-content .quiz-heading',
+      '.main-content .quiz-question',
+      '.main-content .quiz-footer',
       '.main-content .learn-tool-heading',
       '.main-content .about-values > div',
       '.main-content .project-credit'
