@@ -1,7 +1,7 @@
 export const cities = [
   { name:'Barcelona', region:'Catalonia', tag:'Art & architecture', description:'A Mediterranean city where imaginative architecture, lively streets and beach life meet.', image:'https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=85', highlight:'Sagrada Família', detail:'Explore the extraordinary work of Antoni Gaudí, wander through the Gothic Quarter and enjoy the city’s seaside atmosphere.' },
   { name:'Madrid', region:'Community of Madrid', tag:'Capital & culture', description:'Spain’s energetic capital is known for grand boulevards, art museums and late-night plazas.', image:'https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1200&q=85', highlight:'Royal Palace', detail:'Visit the Prado Museum, relax in Retiro Park and discover the historic streets around Plaza Mayor.' },
-  { name:'Seville', region:'Andalusia', tag:'Flamenco & heritage', description:'A warm Andalusian city filled with orange trees, tiled courtyards and beautiful historic landmarks.', image:'https://images.unsplash.com/photo-1559386484-97dfc0e15539?auto=format&fit=crop&w=1200&q=85', highlight:'Plaza de España', detail:'See the Alcázar, admire Plaza de España and experience the city’s deep connection to flamenco.' },
+  { name:'Seville', region:'Andalusia', tag:'Flamenco & heritage', description:'A warm Andalusian city filled with orange trees, tiled courtyards and beautiful historic landmarks.', image:'https://images.unsplash.com/photo-1688404808661-92f72f2ea258?auto=format&fit=crop&w=1200&q=85', highlight:'Plaza de España', detail:'See the Alcázar, admire Plaza de España and experience the city’s deep connection to flamenco.' },
   { name:'Granada', region:'Andalusia', tag:'History & palaces', description:'Set beneath the Sierra Nevada mountains, Granada blends layers of history and dramatic scenery.', image:'https://images.unsplash.com/photo-1590073844006-33379778ae09?auto=format&fit=crop&w=1200&q=85', highlight:'The Alhambra', detail:'Discover the Alhambra palace complex, stroll through the Albaicín and enjoy views across the city.' },
   { name:'Valencia', region:'Valencian Community', tag:'Food & the sea', description:'A sunny coastal destination known for paella, futuristic architecture and green urban spaces.', image:'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=85', highlight:'City of Arts and Sciences', detail:'Cycle through the Turia Gardens, visit the City of Arts and Sciences and taste traditional paella.' },
   { name:'Bilbao', region:'Basque Country', tag:'Design & gastronomy', description:'A creative northern city where bold contemporary design meets Basque food and tradition.', image:'https://images.unsplash.com/photo-1562883676-8c7feb83f09b?auto=format&fit=crop&w=1200&q=85', highlight:'Guggenheim Museum', detail:'Explore the Guggenheim Museum, walk along the river and sample pintxos in the old town.' }
@@ -103,7 +103,7 @@ export const foods = [
     name: 'Arroz negro',
     origin: 'Valencia',
     text: 'A seafood rice dish coloured with squid ink and traditionally served with aioli.',
-    image: 'https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=900&q=85'
+    image: 'https://cdn-imgix.headout.com/media/images/34479770e0d78984475cb65a66afecfe-Catalan%20food.jpg?auto=format&fit=crop&w=900&q=85'
   }
 ];
 
@@ -114,7 +114,7 @@ export const festivals = [
     when: 'Last Wednesday of August',
     place: 'Buñol, Valencia',
     text: 'A famous town celebration known for its playful tomato-throwing tradition.',
-    image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1000&q=85'
+    image: 'https://images.squarespace-cdn.com/content/v1/67dbdacbb0386e2a7bed5138/42d65c2e-5e21-4bfa-90cd-4f731dd29a09/Travel%2Bto%2BLa%2BTomatina%2BFestival%2Bwith%2BFor%2BThe%2BStory%2BVacations.jpeg'
   },
   {
     name: 'Feria de Abril',
@@ -156,7 +156,7 @@ export const festivals = [
     when: '23 April',
     place: 'Barcelona, Catalonia',
     text: 'A beautiful celebration of books and roses, when streets fill with bookstalls and flowers.',
-    image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85'
+    image: 'https://www.reisroutes.be/userfiles/fotos/patio-festival-cordoba_1457_xl.jpg'
   },
   {
     name: 'San Isidro',
