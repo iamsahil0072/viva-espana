@@ -1392,3 +1392,32 @@ body { background: var(--paper); }
   .about-page .about-values > div,
   .about-explore-link { transition: none !important; }
 }
+
+
+/* ABOUT PAGE — MATCH THE SITE-WIDE FADE-UP MOTION */
+.about-page > .page-intro,
+.about-page .about-hero,
+.about-page .about-columns,
+.about-page .about-values-heading,
+.about-page .project-credit {
+  animation: siteFadeUp .65s cubic-bezier(.2,.7,.2,1) both;
+}
+.about-page .about-hero { animation-delay: .08s; }
+.about-page .about-columns { animation-delay: .14s; }
+.about-page .about-values-heading { animation-delay: .08s; }
+.about-page .about-values > div {
+  animation: siteFadeUp .6s cubic-bezier(.2,.7,.2,1) both;
+}
+.about-page .about-values > div:nth-child(2) { animation-delay: .08s; }
+.about-page .about-values > div:nth-child(3) { animation-delay: .16s; }
+.about-page .project-credit { animation-delay: .12s; }
+@media (prefers-reduced-motion: reduce) {
+  .about-page > .page-intro,
+  .about-page .about-hero,
+  .about-page .about-columns,
+  .about-page .about-values-heading,
+  .about-page .about-values > div,
+  .about-page .project-credit {
+    animation: none !important;
+  }
+}
