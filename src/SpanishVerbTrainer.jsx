@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Volume2, RotateCcw, GraduationCap } from "lucide-react";
+import { Volume2, RotateCcw, GraduationCap, ChevronDown } from "lucide-react";
 import "./SpanishVerbTrainer.css";
 
 const pronouns = ["Yo", "Tú", "Él / Ella", "Nosotros", "Vosotros", "Ellos / Ellas"];
@@ -66,12 +66,26 @@ export default function SpanishVerbTrainer() {
       <div className="verb-header-icon">ES</div>
     </header>
     <div className="verb-controls">
-      <label>Choose a verb<select value={verbName} onChange={e=>change(setVerbName)(e.target.value)}>
-        {verbs.map(([name,meaning])=><option key={name} value={name}>{name} — {meaning}</option>)}
-      </select></label>
-      <label>Choose a tense<select value={tense} onChange={e=>change(setTense)(e.target.value)}>
-        {Object.entries(tenseNames).map(([key,label])=><option key={key} value={key}>{label}</option>)}
-      </select></label>
+      <label className="verb-select-card">
+        <span className="verb-select-label"><span className="verb-select-number">01</span> Choose a verb</span>
+        <span className="verb-select-help">Select the action you want to practise</span>
+        <span className="verb-select-field">
+          <select value={verbName} onChange={e=>change(setVerbName)(e.target.value)}>
+            {verbs.map(([name,meaning,type])=><option key={name} value={name}>{name} — {meaning}{type==="irregular"?" · irregular":""}</option>)}
+          </select>
+          <ChevronDown size={17} aria-hidden="true"/>
+        </span>
+      </label>
+      <label className="verb-select-card">
+        <span className="verb-select-label"><span className="verb-select-number">02</span> Choose a tense</span>
+        <span className="verb-select-help">Choose when the action happens</span>
+        <span className="verb-select-field">
+          <select value={tense} onChange={e=>change(setTense)(e.target.value)}>
+            {Object.entries(tenseNames).map(([key,label])=><option key={key} value={key}>{label}</option>)}
+          </select>
+          <ChevronDown size={17} aria-hidden="true"/>
+        </span>
+      </label>
     </div>
     <div className="verb-table-wrap">
       <div className="verb-table-title"><div><span className="verb-eyebrow">CONJUGATION TABLE</span>
