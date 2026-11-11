@@ -1,63 +1,58 @@
-/* Spanish Verb Trainer â€” matched to the vocabulary study panel */
-.verb-trainer {
-  --learn-red:#a91f2b;
-  --learn-red-dark:#841923;
-  --learn-paper:#fffdfa;
-  --learn-cream:#f5eee5;
-  --learn-line:#e7d9c9;
-  --learn-muted:#746d64;
-  margin:42px 0 52px;
-  padding:clamp(22px,4vw,42px);
-  color:#292622;
-  background:var(--learn-cream);
-  border:1px solid var(--learn-line);
-  border-radius:9px;
-  box-shadow:0 12px 34px rgba(48,31,20,.055);
+/* Spanish Verb Trainer — clear conjugation and practice workspace */
+.verb-trainer{
+  --learn-red:#a91f2b;--learn-red-dark:#841923;--learn-paper:#fffdfa;
+  --learn-cream:#f5eee5;--learn-line:#e7d9c9;--learn-muted:#746d64;
+  box-sizing:border-box;margin:38px 0 52px;padding:clamp(20px,4vw,40px);
+  color:#292622;background:linear-gradient(145deg,#fbf5ed 0%,#f3e9dd 100%);
+  border:1px solid #e6d7c7;border-radius:18px;box-shadow:0 18px 48px rgba(57,37,25,.07)
 }
 .verb-trainer *{box-sizing:border-box}
 .verb-trainer-header,.verb-table-title,.verb-quiz-top,.verb-quiz-actions{display:flex;align-items:center;justify-content:space-between;gap:18px}
-.verb-eyebrow{display:inline-flex;align-items:center;gap:7px;color:var(--learn-red);font-size:10px;font-weight:800;letter-spacing:1.7px}
-.verb-trainer-header h2{margin:10px 0;color:#292622;font:600 clamp(27px,3vw,38px)/1.12 var(--serif,Georgia,serif)}
-.verb-trainer-header p{margin:0;color:var(--learn-muted);font-size:13px;line-height:1.7}
-.verb-header-icon{display:grid;place-items:center;flex:0 0 58px;height:58px;color:var(--learn-red);font:700 17px var(--serif,Georgia,serif);border:1px solid #ddc9b8;border-radius:8px;background:#fffaf4}
-.verb-controls{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:27px 0 20px}
-.verb-controls label{display:grid;gap:8px;color:#665e56;font-size:11px;font-weight:700}
-.verb-controls select{width:100%;min-height:46px;padding:0 13px;color:#302b26;background:var(--learn-paper);border:1px solid var(--learn-line);border-radius:6px;font:inherit}
-.verb-table-wrap,.verb-quiz{padding:22px;background:var(--learn-paper);border:1px solid var(--learn-line);border-radius:8px}
-.verb-table-title{margin-bottom:16px}
-.verb-table-title h3{margin:7px 0 0;color:#292622;font:600 21px/1.3 var(--serif,Georgia,serif)}
+.verb-eyebrow{display:inline-flex;align-items:center;gap:7px;color:var(--learn-red);font-size:10px;font-weight:850;letter-spacing:1.8px}
+.verb-trainer-header h2{margin:11px 0;color:#292622;font:600 clamp(28px,3.2vw,42px)/1.08 var(--serif,Georgia,serif);letter-spacing:-.7px}
+.verb-trainer-header p{margin:0;color:var(--learn-muted);font-size:13px;line-height:1.8}
+.verb-header-icon{display:grid;place-items:center;flex:0 0 66px;height:66px;color:var(--learn-red);font:700 19px var(--serif,Georgia,serif);border:1px solid #dfcabc;border-radius:16px;background:#fffaf4;box-shadow:0 8px 22px rgba(67,43,29,.05)}
+.verb-controls{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0 18px}
+.verb-controls label{display:grid;gap:8px;color:#665e56;font-size:11px;font-weight:800}
+.verb-controls select{width:100%;min-height:49px;padding:0 14px;color:#302b26;background:#fffdfa;border:1px solid #e3d6c9;border-radius:10px;font:inherit;cursor:pointer;box-shadow:0 3px 10px rgba(57,37,25,.025)}
+.verb-table-wrap,.verb-quiz{padding:clamp(18px,3vw,26px);background:#fffdfa;border:1px solid #e6d9cc;border-radius:14px;box-shadow:0 9px 24px rgba(57,37,25,.04)}
+.verb-table-title{margin-bottom:17px}
+.verb-table-title h3{margin:8px 0 0;color:#292622;font:600 23px/1.3 var(--serif,Georgia,serif)}
 .verb-table-title small{color:var(--learn-muted);font:500 12px sans-serif}
-.verb-tense-pill{padding:7px 11px;color:var(--learn-red);background:#f8eee8;border:1px solid #e5cfc4;border-radius:999px;font-size:10px;white-space:nowrap}
-.verb-table{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.verb-table-row{display:grid;grid-template-columns:1fr 1fr 32px;align-items:center;gap:8px;min-height:47px;padding:7px 10px;color:#70675e;background:#fffaf5;border:1px solid #eee4da;border-radius:6px;font-size:12px}
-.verb-table-row strong{color:#302b26;font:600 15px var(--serif,Georgia,serif)}
-.verb-table-row button,.verb-listen{display:inline-flex;align-items:center;justify-content:center;gap:7px;color:var(--learn-red);background:#f8eee8;border:1px solid #e5cfc4;border-radius:6px;cursor:pointer}
-.verb-table-row button{width:31px;height:31px}
-.verb-quiz{margin-top:18px}
-.verb-score{color:var(--learn-red);font-size:11px;font-weight:750}
-.verb-quiz h3{margin:17px 0 8px;color:#292622;font:600 22px/1.3 var(--serif,Georgia,serif)}
-.verb-question{margin:0 0 13px;color:#4b443d;font:500 17px/1.5 var(--serif,Georgia,serif)}
-.verb-listen{padding:8px 12px;font-size:11px}
-.verb-options{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:17px}
-.verb-options button{min-height:46px;padding:10px 13px;color:#4b443d;text-align:left;background:#fffdfa;border:1px solid var(--learn-line);border-radius:6px;cursor:pointer;font:inherit;font-size:12px}
+.verb-tense-pill{padding:8px 12px;color:var(--learn-red);background:#fbefeb;border:1px solid #e5cfc4;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap}
+.verb-table{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.verb-table-row{display:grid;grid-template-columns:minmax(82px,1fr) minmax(75px,1fr) 34px;align-items:center;gap:8px;min-height:54px;padding:8px 11px;color:#70675e;background:#fffaf5;border:1px solid #eee4da;border-radius:9px;font-size:12px;transition:border-color .18s,background .18s}
+.verb-table-row:hover{border-color:#dfc2b9;background:#fff6f0}
+.verb-table-row strong{color:#302b26;font:600 16px var(--serif,Georgia,serif)}
+.verb-table-row button,.verb-listen{display:inline-flex;align-items:center;justify-content:center;gap:7px;color:var(--learn-red);background:#fbefeb;border:1px solid #e5cfc4;border-radius:8px;cursor:pointer;transition:all .18s}
+.verb-table-row button{width:33px;height:33px}
+.verb-table-row button:hover,.verb-listen:hover{background:#f4e1dc;transform:translateY(-1px)}
+.verb-quiz{margin-top:17px}
+.verb-score{color:var(--learn-red);font-size:11px;font-weight:800;font-variant-numeric:tabular-nums}
+.verb-quiz h3{margin:18px 0 9px;color:#292622;font:600 23px/1.3 var(--serif,Georgia,serif)}
+.verb-question{margin:0 0 14px;color:#4b443d;font:500 19px/1.5 var(--serif,Georgia,serif)}
+.verb-listen{padding:9px 13px;font-size:11px;font-weight:750}
+.verb-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.verb-options button{min-height:49px;padding:11px 14px;color:#4b443d;text-align:left;background:#fffdfa;border:1px solid #e7dbcf;border-radius:9px;cursor:pointer;font:inherit;font-size:12px;font-weight:650;transition:all .18s}
+.verb-options button:hover:not(:disabled){border-color:#c9958d;background:#fcf4ef}
 .verb-options button.is-selected{border-color:#bd7d7d;background:#fbf0ed}
 .verb-options button.is-correct{color:#3f7650;border-color:#9bb9a4;background:#edf5ed}
 .verb-options button.is-wrong{color:#a33a3a;border-color:#d9a0a0;background:#fbefed}
 .verb-options button:disabled{cursor:default}
-.verb-feedback{margin:13px 0 0;font-size:12px;font-weight:650}
+.verb-feedback{margin:14px 0 0;font-size:12px;font-weight:750}
 .verb-feedback.good{color:#3f7650}.verb-feedback.bad{color:#a33a3a}
-.verb-quiz-actions{justify-content:flex-start;margin-top:17px}
-.verb-primary,.verb-reset{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:0 16px;border-radius:5px;font:inherit;font-size:11px;font-weight:750;cursor:pointer}
-.verb-primary{color:#fff;background:var(--learn-red);border:1px solid var(--learn-red)}
-.verb-primary:hover:not(:disabled){background:var(--learn-red-dark)}
-.verb-primary:disabled{opacity:.45;cursor:not-allowed}
-.verb-reset{color:#6d6259;background:transparent;border:1px solid var(--learn-line)}
-.verb-footnote{margin:16px 0 0;color:#82786e;font-size:10px;line-height:1.5}
+.verb-quiz-actions{justify-content:flex-start;flex-wrap:wrap;margin-top:18px}
+.verb-primary,.verb-reset{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 17px;border-radius:9px;font:inherit;font-size:11px;font-weight:800;cursor:pointer;transition:all .18s}
+.verb-primary{color:#fff;background:var(--learn-red);border:1px solid var(--learn-red);box-shadow:0 5px 12px rgba(169,31,43,.13)}
+.verb-primary:hover:not(:disabled){background:var(--learn-red-dark);transform:translateY(-1px)}
+.verb-primary:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+.verb-reset{color:#6d6259;background:transparent;border:1px solid #e2d5c8}
+.verb-reset:hover{background:#f8f0e8;border-color:#d4c1b0}
+.verb-footnote{margin:16px 0 0;color:#82786e;font-size:10px;line-height:1.6}
 .verb-trainer button:focus-visible,.verb-controls select:focus-visible{outline:2px solid var(--learn-red);outline-offset:3px}
 @media(max-width:650px){
   .verb-controls,.verb-table,.verb-options{grid-template-columns:1fr}
-  .verb-trainer-header{align-items:flex-start}
-  .verb-header-icon{flex-basis:46px;height:46px}
-  .verb-table-title{align-items:flex-start;flex-direction:column}
-  .verb-quiz-actions{flex-wrap:wrap}
+  .verb-trainer-header{align-items:flex-start}.verb-header-icon{flex-basis:50px;height:50px}
+  .verb-table-title{align-items:flex-start;flex-direction:column}.verb-quiz-actions{flex-wrap:wrap}
 }
+@media(prefers-reduced-motion:reduce){.verb-trainer *{transition:none!important;scroll-behavior:auto!important}}
