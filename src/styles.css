@@ -287,3 +287,117 @@ body { background: var(--paper); }
     transition-duration: .01ms !important;
   }
 }
+
+
+/* STEP 2 — HOMEPAGE EDITORIAL SECTIONS */
+.home-festivals-section {
+  padding: 92px 0 104px;
+  background: linear-gradient(180deg, #f4ecdf 0%, #fbf7ef 100%);
+}
+.home-festivals-section .section-heading { margin-bottom: 14px; }
+.home-festivals-intro {
+  max-width: 570px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.85;
+  margin: 0 0 34px;
+}
+.home-festival-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.home-festival-card {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 5px 18px rgba(48, 31, 20, .045);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.home-festival-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 36px rgba(48, 31, 20, .11);
+}
+.home-festival-image {
+  display: block;
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+}
+.home-festival-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .55s ease;
+}
+.home-festival-card:hover .home-festival-image img { transform: scale(1.05); }
+.home-festival-number {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 8px rgba(0,0,0,.4);
+}
+.home-festival-arrow {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--red);
+  background: #fffdf8;
+}
+.home-festival-body { padding: 22px 23px 24px; }
+.home-festival-meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+.home-festival-body h3 {
+  margin: 12px 0 9px;
+  color: var(--ink);
+  font: 600 25px/1.15 var(--serif);
+}
+.home-festival-body p {
+  min-height: 58px;
+  margin: 0 0 15px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.75;
+}
+.home-festival-place {
+  display: block;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: .3px;
+}
+.dark .home-festivals-section {
+  background: linear-gradient(180deg, #2c2420 0%, #201b19 100%);
+}
+@media (max-width: 760px) {
+  .home-festivals-section { padding: 68px 0 76px; }
+  .home-festival-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .home-festival-image { height: 180px; }
+  .home-festival-body { padding: 16px; }
+  .home-festival-body h3 { font-size: 21px; }
+  .home-festival-body p { font-size: 11px; min-height: 72px; }
+}
+@media (max-width: 480px) {
+  .home-festival-grid { grid-template-columns: 1fr; }
+  .home-festival-image { height: 225px; }
+  .home-festival-body p { min-height: 0; }
+}
