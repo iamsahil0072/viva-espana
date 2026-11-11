@@ -793,3 +793,111 @@ body { background: var(--paper); }
   .culture-inner-tabs { gap: 6px; }
   .culture-tab { font-size: 10px; padding: 8px 9px; }
 }
+
+
+/* STEP 5 — SITE-WIDE MOTION & CUISINE EDITORIAL POLISH */
+@keyframes siteFadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes siteSoftReveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.page-shell > .page-intro,
+.page-shell > .culture-hero,
+.page-shell > .explore-overview,
+.page-shell > .explore-search-heading,
+.page-shell > .search-bar {
+  animation: siteFadeUp .65s cubic-bezier(.2,.7,.2,1) both;
+}
+.page-shell .city-card,
+.page-shell .food-card,
+.page-shell .culture-card,
+.page-shell .culture-extra-card,
+.page-shell .festival-row,
+.page-shell .vocab-card {
+  animation: siteFadeUp .6s cubic-bezier(.2,.7,.2,1) both;
+}
+.page-shell .city-card:nth-child(3n + 2),
+.page-shell .food-card:nth-child(3n + 2),
+.page-shell .culture-card:nth-child(2n + 2),
+.page-shell .festival-row:nth-child(2n + 2) { animation-delay: .08s; }
+.page-shell .city-card:nth-child(3n + 3),
+.page-shell .food-card:nth-child(3n + 3),
+.page-shell .culture-card:nth-child(2n + 3),
+.page-shell .festival-row:nth-child(2n + 3) { animation-delay: .16s; }
+.page-shell .section-heading { animation: siteFadeUp .55s ease both; }
+.page-shell .food-card,
+.page-shell .city-card,
+.page-shell .culture-card,
+.page-shell .culture-extra-card,
+.page-shell .festival-row {
+  will-change: transform;
+}
+.page-shell .food-card:hover,
+.page-shell .city-card:hover,
+.page-shell .culture-card:hover,
+.page-shell .culture-extra-card:hover {
+  transform: translateY(-6px);
+}
+.page-shell img {
+  transition: transform .65s cubic-bezier(.2,.7,.2,1), filter .35s ease;
+}
+.page-shell .food-card:hover img,
+.page-shell .city-card:hover img,
+.page-shell .culture-extra-card:hover img {
+  transform: scale(1.045);
+}
+.cuisine-page .page-intro { margin-bottom: 42px; }
+.cuisine-grid { gap: 25px; }
+.cuisine-grid .food-card {
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(48,31,20,.045);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.cuisine-grid .food-card:hover {
+  box-shadow: 0 18px 38px rgba(48,31,20,.12);
+}
+.cuisine-grid .food-card > img { height: 255px; }
+.cuisine-grid .food-card-content { padding: 23px 24px 26px; }
+.cuisine-grid .food-card h3 {
+  font-size: 25px;
+  letter-spacing: -.3px;
+}
+.cuisine-grid .food-card .card-kicker {
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: 9px;
+  font-weight: 700;
+}
+.tapas-note {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(48,31,20,.045);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.tapas-note:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(48,31,20,.09);
+}
+.tapas-note > svg { flex: 0 0 auto; }
+.dark .tapas-note { border-color: var(--line); border-left-color: var(--gold); }
+@media (max-width: 760px) {
+  .cuisine-grid { gap: 15px; }
+  .cuisine-grid .food-card > img { height: 190px; }
+  .cuisine-grid .food-card-content { padding: 16px; }
+  .cuisine-grid .food-card h3 { font-size: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-shell > *, .page-shell .city-card, .page-shell .food-card,
+  .page-shell .culture-card, .page-shell .culture-extra-card,
+  .page-shell .festival-row, .page-shell .vocab-card {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
