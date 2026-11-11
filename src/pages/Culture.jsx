@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import {
   Music2,
   Palette,
@@ -41,30 +42,137 @@ const traditions = [
     title: 'Traditional dances',
     subtitle: 'Dance, rhythm and expression',
     image: 'https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=1000&q=85',
-    text: 'Flamenco is one of Spain’s best-known dance traditions. It combines singing, guitar, handclaps and expressive movement. Other regional dances include the Sardana of Catalonia, Jota of Aragón and Muñeira of Galicia.'
+    tabs: [
+      {
+        label: 'Flamenco',
+        title: 'The passion of Andalusia',
+        text: 'Flamenco is one of Spain’s most recognised cultural expressions. It combines expressive dancing, singing, guitar music and rhythmic handclaps. Its performances communicate powerful emotions and stories.'
+      },
+      {
+        label: 'Sardana',
+        title: 'A circle of Catalan culture',
+        text: 'The Sardana is a traditional dance from Catalonia. Dancers join hands in a circle and move together to music played by a cobla ensemble. It represents unity and regional identity.'
+      },
+      {
+        label: 'Jota & Muñeira',
+        title: 'Regional dance traditions',
+        text: 'The Jota is associated with Aragón and is known for lively steps and energetic music. The Muñeira is a traditional dance from Galicia, often accompanied by the sound of the gaita, a type of bagpipe.'
+      }
+    ]
   },
   {
     icon: Shirt,
     title: 'Traditional clothing',
     subtitle: 'Colour and regional identity',
     image: 'https://i.blogs.es/e7f6f8/279690031_1219334055266192_2406264317075660150_n/650_1200.jpeg',
-    text: 'Traditional Spanish clothing differs across regions. The traje de flamenca is famous for its colourful fabric and ruffles. Valencia is known for the elaborate traje de fallera worn during Fallas celebrations.'
+    tabs: [
+      {
+        label: 'Flamenco dress',
+        title: 'Traje de flamenca',
+        text: 'The traje de flamenca is a famous Andalusian outfit. It often features colourful fabric, ruffles, fitted shapes and decorative accessories. It is especially visible during the Feria de Abril in Seville.'
+      },
+      {
+        label: 'Fallera dress',
+        title: 'Traje de fallera',
+        text: 'Valencia is famous for its elaborate fallera clothing. The outfit includes a beautifully decorated dress, traditional hairstyles and ornate accessories. It is worn during the Las Fallas celebrations.'
+      },
+      {
+        label: 'Regional styles',
+        title: 'A variety of Spanish outfits',
+        text: 'Different Spanish regions have their own traditional clothing. These outfits reflect local history, climate, crafts and celebrations. They are often displayed during festivals and cultural events.'
+      }
+    ]
   },
   {
     icon: PartyPopper,
     title: 'Famous traditions',
     subtitle: 'Celebrations and community',
     image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1000&q=85',
-    text: 'Spanish celebrations bring communities together. Semana Santa features religious processions, Three Kings Day includes parades and gifts, and local fiestas celebrate music, food and community.'
+    tabs: [
+      {
+        label: 'Three Kings',
+        title: 'Día de los Reyes Magos',
+        text: 'Celebrated on 6 January, Three Kings Day marks the arrival of the Three Wise Men. Children receive gifts, and colourful parades known as Cabalgatas take place in many Spanish towns.'
+      },
+      {
+        label: 'Semana Santa',
+        title: 'Holy Week in Spain',
+        text: 'Semana Santa takes place during the week before Easter. Cities such as Seville and Málaga hold processions featuring religious statues, traditional music and participants wearing distinctive robes.'
+      },
+      {
+        label: 'Local fiestas',
+        title: 'Celebrations across Spain',
+        text: 'Spanish towns and cities organise local fiestas throughout the year. These celebrations often include music, dancing, traditional food, parades and activities that bring communities together.'
+      }
+    ]
   },
   {
     icon: Guitar,
     title: 'Music and instruments',
     subtitle: 'The sounds of Spain',
     image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1000&q=85',
-    text: 'Spanish music has a rich history. The classical guitar is internationally recognised, while castanets and cajón are associated with traditional performances. Regional music reflects Spain’s diverse identities.'
+    tabs: [
+      {
+        label: 'Classical guitar',
+        title: 'The Spanish guitar',
+        text: 'The classical guitar is strongly associated with Spanish musical culture. Its expressive sound is used in classical compositions, traditional music and flamenco performances.'
+      },
+      {
+        label: 'Castanets',
+        title: 'Rhythm with castanets',
+        text: 'Castanets are small percussion instruments traditionally made from wood or similar materials. They are held in the hands and clicked together to create rhythmic patterns, especially in dance performances.'
+      },
+      {
+        label: 'Cajón & bagpipes',
+        title: 'Regional musical sounds',
+        text: 'The cajón is a box-shaped percussion instrument used in many flamenco performances. In Galicia, the gaita, a traditional bagpipe, is an important part of regional folk music.'
+      }
+    ]
   }
 ];
+
+function TraditionCard({ item, index }) {
+  const [activeTab, setActiveTab] = useState(0);
+  const selected = item.tabs[activeTab];
+
+  return (
+    <article className="culture-extra-card">
+      <img src={item.image} alt={item.title} />
+
+      <div className="culture-extra-content">
+        <div className="culture-icon">
+          <item.icon size={24} />
+        </div>
+
+        <span className="culture-number">0{index + 5}</span>
+
+        <span className="culture-extra-subtitle">
+          {item.subtitle}
+        </span>
+
+        <h3>{item.title}</h3>
+
+        <div className="culture-inner-tabs">
+          {item.tabs.map((tab, tabIndex) => (
+            <button
+              key={tab.label}
+              type="button"
+              className={`culture-tab ${activeTab === tabIndex ? 'active' : ''}`}
+              onClick={() => setActiveTab(tabIndex)}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="culture-tab-content">
+          <h4>{selected.title}</h4>
+          <p>{selected.text}</p>
+        </div>
+      </div>
+    </article>
+  );
+}
 
 export default function Culture() {
   return (
@@ -110,25 +218,17 @@ export default function Culture() {
           <p>
             Discover the customs, celebrations, clothing and musical
             traditions that have shaped Spanish identity across generations.
+            Select the tabs in each card to explore more.
           </p>
         </div>
 
         <div className="culture-extra-grid">
           {traditions.map((item, i) => (
-            <article className="culture-extra-card" key={item.title}>
-              <img src={item.image} alt={item.title} />
-              <div className="culture-extra-content">
-                <div className="culture-icon">
-                  <item.icon size={24} />
-                </div>
-                <span className="culture-number">0{i + 5}</span>
-                <span className="culture-extra-subtitle">
-                  {item.subtitle}
-                </span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
-            </article>
+            <TraditionCard
+              key={item.title}
+              item={item}
+              index={i}
+            />
           ))}
         </div>
       </section>
@@ -157,3 +257,4 @@ export default function Culture() {
     </main>
   );
 }
+

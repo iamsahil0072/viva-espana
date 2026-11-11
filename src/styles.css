@@ -82,3 +82,85 @@
     height: 220px;
   }
 }
+
+/* Culture page interactive inner tabs */
+
+.culture-inner-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.culture-tab {
+  border: 1px solid #e5d8ca;
+  background: #faf6f0;
+  color: #38312c;
+  padding: 9px 13px;
+  border-radius: 30px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.culture-tab:hover {
+  border-color: #a71927;
+  color: #a71927;
+}
+
+.culture-tab.active {
+  background: #a71927;
+  color: white;
+  border-color: #a71927;
+}
+
+.culture-tab-content {
+  background: #f8f2eb;
+  border-left: 3px solid #a71927;
+  padding: 18px;
+  margin-top: 12px;
+  border-radius: 0 10px 10px 0;
+}
+
+.culture-tab-content h4 {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+
+.culture-tab-content p {
+  line-height: 1.8;
+  margin: 0;
+  font-size: 14px;
+}
+
+.culture-extra-card {
+  min-width: 0;
+}
+
+.culture-extra-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.culture-extra-content {
+  padding: 24px;
+}
+
+@media (max-width: 600px) {
+  .culture-extra-card img {
+    height: 210px;
+  }
+
+  .culture-extra-content {
+    padding: 18px;
+  }
+
+  .culture-tab {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
