@@ -1421,3 +1421,120 @@ body { background: var(--paper); }
     animation: none !important;
   }
 }
+
+
+/* Shared navigation and footer refinement */
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  z-index: 100;
+  padding: 10px 14px;
+  border-radius: 3px;
+  background: var(--red-dark);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  transform: translateY(-160%);
+  transition: transform .2s ease;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.site-header {
+  transition: background .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.nav-wrap {
+  min-height: 100%;
+}
+.nav-links a {
+  position: relative;
+  padding-block: 9px;
+  white-space: nowrap;
+}
+.nav-links a.active::after {
+  bottom: 0;
+  border-radius: 2px;
+}
+.nav-actions button:focus-visible,
+.nav-cta:focus-visible,
+.footer a:focus-visible {
+  outline-offset: 4px;
+}
+.menu-toggle {
+  color: var(--ink);
+}
+.footer {
+  position: relative;
+}
+.footer-top {
+  align-items: flex-start;
+}
+.footer-brand-block {
+  max-width: 310px;
+}
+.footer-links {
+  max-width: 510px;
+  justify-content: flex-end;
+  row-gap: 18px;
+}
+.footer-links a {
+  transition: color .2s ease, transform .2s ease;
+}
+.footer-links a:hover {
+  transform: translateY(-2px);
+}
+.footer-bottom {
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.dark .skip-link {
+  background: #e6b85b;
+  color: #241d18;
+}
+.dark .nav-links a.active::after {
+  background: #e6b85b;
+}
+@media (max-width: 1050px) and (min-width: 761px) {
+  .nav-wrap {
+    gap: 16px;
+  }
+  .nav-links {
+    gap: clamp(10px, 1.5vw, 16px);
+  }
+  .nav-links a {
+    font-size: 10px;
+  }
+  .nav-actions {
+    gap: 7px;
+  }
+}
+@media (max-width: 760px) {
+  .nav-links {
+    padding: 15px 22px 22px;
+    background: var(--card);
+    box-shadow: 0 16px 24px rgba(38, 25, 18, .08);
+  }
+  .nav-links a {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 13px;
+  }
+  .nav-links a.active::after {
+    left: 0;
+    right: auto;
+    bottom: 1px;
+    width: 28px;
+  }
+  .footer-top {
+    gap: 28px;
+  }
+  .footer-links {
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .dark .nav-links {
+    background: var(--card);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, .22);
+  }
+}
