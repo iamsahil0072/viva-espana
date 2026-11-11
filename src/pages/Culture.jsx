@@ -187,8 +187,8 @@ export default function Culture() {
 
       <div className="culture-hero">
         <img
-          src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1800&q=85"
-          alt="Coastal landscape"
+          src="https://www.thetrainline.com/cms/media/11928/spain-flamenco-dancer.jpg"
+          alt="Flamenco dancer performing in a traditional red dress in Spain"
         />
         <div>
           <span className="eyebrow">MANY REGIONS, MANY STORIES</span>
