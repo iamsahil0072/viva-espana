@@ -17,6 +17,8 @@ function ScrollReveal(){
       '.main-content .page-shell > *',
       '.main-content .city-card',
       '.main-content .food-card',
+      '.main-content .food-grid',
+      '.main-content .section-heading',
       '.main-content .culture-card',
       '.main-content .culture-extra-card',
       '.main-content .festival-row',
