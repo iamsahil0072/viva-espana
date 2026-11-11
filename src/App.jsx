@@ -30,7 +30,23 @@ function ScrollReveal(){
       '.main-content .quiz-footer',
       '.main-content .learn-tool-heading',
       '.main-content .about-values > div',
-      '.main-content .project-credit'
+      '.main-content .project-credit',
+      '.main-content .culture-extra-card',
+      '.main-content .culture-inner-tabs',
+      '.main-content .feature-split',
+      '.main-content .intro-band',
+      '.main-content .quote-banner',
+      '.main-content .bottom-cta',
+      '.main-content .language-strip',
+      '.main-content .tapas-note',
+      '.main-content .map-note',
+      '.main-content .detail-hero',
+      '.main-content .detail-text',
+      '.main-content .festivals-intro-note',
+      '.main-content .learn-intro-note',
+      '.main-content .vocab-section',
+      '.main-content .sv-wrap',
+      '.main-content .verb-trainer'
     ].join(','));
     if(!('IntersectionObserver' in window)){
       targets.forEach((element)=>element.classList.add('reveal-visible'));
