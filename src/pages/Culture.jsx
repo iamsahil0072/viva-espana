@@ -47,7 +47,7 @@ const traditions = [
     icon: Shirt,
     title: 'Traditional clothing',
     subtitle: 'Colour and regional identity',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85',
+    image: 'https://i.blogs.es/e7f6f8/279690031_1219334055266192_2406264317075660150_n/650_1200.jpeg',
     text: 'Traditional Spanish clothing differs across regions. The traje de flamenca is famous for its colourful fabric and ruffles. Valencia is known for the elaborate traje de fallera worn during Fallas celebrations.'
   },
   {
