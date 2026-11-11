@@ -1638,3 +1638,42 @@ body { background: var(--paper); }
     transition: none !important;
   }
 }
+
+
+/* Scroll-triggered reveal: one shared motion for every page and section. */
+.main-content .reveal-ready {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity .65s cubic-bezier(.2,.7,.2,1),
+    transform .65s cubic-bezier(.2,.7,.2,1);
+  will-change: opacity, transform;
+}
+.main-content .reveal-ready.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* A gentle, consistent card sequence as each grid enters view. */
+.main-content .city-card:nth-child(3n + 2),
+.main-content .food-card:nth-child(3n + 2),
+.main-content .home-festival-card:nth-child(3n + 2),
+.main-content .culture-card:nth-child(2n + 2),
+.main-content .festival-row:nth-child(2n + 2) {
+  transition-delay: .08s;
+}
+.main-content .city-card:nth-child(3n + 3),
+.main-content .food-card:nth-child(3n + 3),
+.main-content .home-festival-card:nth-child(3n + 3),
+.main-content .culture-card:nth-child(2n + 3),
+.main-content .festival-row:nth-child(2n + 3) {
+  transition-delay: .16s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .main-content .reveal-ready,
+  .main-content .reveal-ready.reveal-visible {
+    opacity: 1;
+    transform: none;
+    transition: none !important;
+    will-change: auto;
+  }
+}
