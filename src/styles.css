@@ -1694,3 +1694,36 @@ body { background: var(--paper); }
 .main-content .quiz-question:nth-child(odd) {
   transition-delay: 0s;
 }
+
+
+/* Mobile navigation: match the site's shared soft fade-up motion. */
+@media (max-width: 760px) {
+  .nav-links {
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition:
+      opacity .3s cubic-bezier(.2,.7,.2,1),
+      transform .3s cubic-bezier(.2,.7,.2,1),
+      max-height .35s cubic-bezier(.2,.7,.2,1),
+      visibility .3s;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    max-height: 440px;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-links {
+    transition: none !important;
+    transform: none !important;
+  }
+}
