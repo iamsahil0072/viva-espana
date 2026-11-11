@@ -2,3 +2,83 @@
 @media(max-width:1050px){.nav-links{gap:15px}.nav-links a{font-size:11px}.nav-cta{display:none}.culture-grid{grid-template-columns:repeat(2,1fr)}.vocab-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){.container,.nav-wrap,.hero-content{width:calc(100% - 36px)}.site-header{height:68px}.brand{font-size:18px}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:20px 24px 25px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:20px}.nav-links.open{display:flex}.nav-links a{font-size:13px}.menu-toggle{display:inline-flex;width:36px}.hero{height:690px;min-height:590px}.hero h1{font-size:clamp(60px,14vw,86px);letter-spacing:-2px}.hero-content>p{font-size:13px;max-width:350px}.hero-side-label{right:10px;font-size:8px}.hero-note{margin-top:52px}.scroll-cue{left:18px;transform:none}.intro-band{padding:38px 22px;gap:12px;align-items:flex-start}.intro-symbol{font-size:28px}.intro-band p{font-size:16px}.intro-script{display:none}.section{padding-top:70px;padding-bottom:70px}.section-heading h2{font-size:34px}.city-grid,.food-grid{grid-template-columns:1fr 1fr;gap:14px}.card-image-wrap{height:190px}.city-card-body{padding:16px}.city-card h3{font-size:21px}.city-card p,.food-card p{font-size:11px}.food-card>img{height:170px}.food-card-content{padding:15px}.food-card h3{font-size:19px}.feature-split{grid-template-columns:1fr}.feature-photo{min-height:330px}.feature-copy{padding:55px 28px 60px}.feature-copy h2{font-size:42px}.quote-banner{padding:55px 18px}.bottom-cta{padding-top:60px;padding-bottom:60px;align-items:flex-start;flex-direction:column}.footer{padding:40px 22px 20px}.footer-top{flex-direction:column;padding-bottom:30px}.footer-links{gap:16px 22px}.footer-bottom{gap:10px;flex-direction:column}.page-shell{padding-top:55px;padding-bottom:70px}.page-intro{margin-bottom:40px}.page-intro h1{font-size:48px}.page-intro>p{font-size:12px}.detail-hero{grid-template-columns:1fr;gap:25px}.detail-hero>img{height:310px}.detail-hero h1{font-size:58px}.detail-text{margin-top:55px}.culture-hero{height:370px}.culture-hero>div{left:22px;bottom:40px}.culture-grid{grid-template-columns:1fr 1fr;gap:10px}.culture-card{padding:20px 15px}.culture-card h3{font-size:19px}.culture-card p{font-size:10px}.language-inner{grid-template-columns:1fr;gap:20px}.language-strip{padding:50px 0}.festival-row{grid-template-columns:1fr;gap:18px}.festival-image{height:230px}.festival-info h2{font-size:28px}.vocab-grid{grid-template-columns:repeat(2,1fr)}.quiz-panel{padding:22px 15px}.quiz-questions{grid-template-columns:1fr}.quiz-heading h2{font-size:25px}.about-hero{height:290px}.about-columns{grid-template-columns:1fr;gap:12px;margin:70px auto 40px}.about-values{grid-template-columns:1fr}.project-credit{padding:24px}.project-credit h2{font-size:26px}}
 @media(max-width:420px){.language-toggle{min-width:32px;padding:0 7px}.nav-actions{gap:6px}.city-grid,.food-grid{grid-template-columns:1fr}.card-image-wrap{height:230px}.food-card>img{height:210px}.culture-grid{grid-template-columns:1fr}.vocab-grid{grid-template-columns:1fr 1fr}.vocab-card{padding:14px 12px}.vocab-card h3{font-size:16px}.hero-buttons{flex-wrap:wrap}.festival-meta{gap:12px}.search-bar{padding:0 10px}.search-bar>span{font-size:9px}}
+
+/* Culture traditions image cards */
+
+.culture-traditions .culture-section-heading {
+  max-width: 760px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.culture-section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 16px 0;
+}
+
+.culture-section-heading p {
+  color: #77716a;
+  line-height: 1.8;
+}
+
+.culture-extra-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.culture-extra-card {
+  overflow: hidden;
+  background: #fffdfa;
+  border: 1px solid #e8dfd4;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.culture-extra-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(40, 25, 15, .10);
+}
+
+.culture-extra-card > img {
+  display: block;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.culture-extra-content {
+  position: relative;
+  padding: 28px;
+}
+
+.culture-extra-content h3 {
+  font-family: Georgia, serif;
+  font-size: 29px;
+  margin: 14px 0;
+}
+
+.culture-extra-content p {
+  color: #77716a;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.culture-extra-subtitle {
+  display: block;
+  margin-top: 15px;
+  color: #a52a35;
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .culture-extra-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .culture-extra-card > img {
+    height: 220px;
+  }
+}
