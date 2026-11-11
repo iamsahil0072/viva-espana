@@ -1642,6 +1642,7 @@ body { background: var(--paper); }
 
 /* Scroll-triggered reveal: one shared motion for every page and section. */
 .main-content .reveal-ready {
+  animation: none !important;
   opacity: 0;
   transform: translateY(18px);
   transition:
