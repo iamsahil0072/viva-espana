@@ -92,3 +92,43 @@
   .sv-total span{margin-left:3px}.sv-stats{grid-template-columns:1fr 1fr}.sv-stats div:last-child{grid-column:1/-1}
 }
 @media(prefers-reduced-motion:reduce){.sv-wrap *{transition:none!important;scroll-behavior:auto!important}}
+
+
+/* Dark theme */
+.dark .sv-wrap{--learn-red:#ef777c;--learn-red-dark:#ff9a9e;--learn-paper:#252321;--learn-cream:#211f1d;--learn-line:#403a35;--learn-muted:#b7ada2;color:#f3eee8;background:linear-gradient(145deg,#252321 0%,#1d1b1a 100%);border-color:#403a35;box-shadow:0 18px 48px rgba(0,0,0,.2)}
+.dark .sv-heading{border-color:#403a35}
+.dark .sv-heading h2,.dark .sv-total strong,.dark .sv-flashcard h3,.dark .sv-word-row strong,.dark .sv-quiz h3{color:#f3eee8}
+.dark .sv-heading p,.dark .sv-stats span,.dark .sv-result-count,.dark .sv-card-top,.dark .sv-word-row span,.dark .sv-footnote{color:#b7ada2}
+.dark .sv-total,.dark .sv-stats div,.dark .sv-search,.dark .sv-flashcard,.dark .sv-word-list,.dark .sv-quiz{background:#292623;border-color:#49413a}
+.dark .sv-stats div:after{background:rgba(239,119,124,.08)}
+.dark .sv-progress{background:#49413a}
+.dark .sv-progress span{background:linear-gradient(90deg,#c64b55,#f08083)}
+.dark .sv-search input{color:#f3eee8}
+.dark .sv-search input::placeholder{color:#93887e}
+.dark .sv-modes{background:#302c28;border-color:#49413a}
+.dark .sv-modes button{color:#c4b9ad}
+.dark .sv-modes button.active,.dark .sv-categories button.active{background:#a91f2b;border-color:#a91f2b;color:#fff}
+.dark .sv-categories button{background:#292623;border-color:#49413a;color:#d1c7bc}
+.dark .sv-categories button span{color:#ef777c}
+.dark .sv-categories button.active span{color:#fff}
+.dark .sv-flashcard{background:radial-gradient(circle at 100% 0%,rgba(239,119,124,.09),transparent 36%),#292623}
+.dark .sv-card-top span:last-child,.dark .sv-card-label{color:#ef8589}
+.dark .sv-sound,.dark .sv-quiz-sound{background:#3b2928;border-color:#684044;color:#ff999c}
+.dark .sv-card-divider{background:#49413a}
+.dark .sv-flashcard>p{color:#d0c6bb}
+.dark .sv-known{border-color:#5a5148;color:#d0c6bb}
+.dark .sv-known.is-known{background:#26382d;border-color:#53775e;color:#a8d3b1}
+.dark .sv-card-controls button{background:#292623;border-color:#49413a;color:#e7ded4}
+.dark .sv-card-controls .sv-shuffle{color:#ef8589}
+.dark .sv-word-row{border-color:#403a35}
+.dark .sv-word-row:hover{background:#302b27}
+.dark .sv-word-row button{background:#302c28;border-color:#49413a;color:#c8bdb1}
+.dark .sv-word-row button.marked{background:#26382d;border-color:#53775e;color:#a8d3b1}
+.dark .sv-choices button{background:#302c28;border-color:#49413a;color:#e5dcd2}
+.dark .sv-choices button:hover:not(:disabled){background:#3a302d;border-color:#87565a}
+.dark .sv-choices button.correct{background:#26382d;border-color:#53775e;color:#a8d3b1}
+.dark .sv-choices button.incorrect{background:#402729;border-color:#875052;color:#ffaaaa}
+.dark .sv-quiz-finish{color:#a8d3b1}
+.dark .sv-quiz-finish p{color:#b7ada2}
+.dark .sv-empty{color:#b7ada2}
+.dark .sv-next,.dark .sv-quiz-finish button{background:#a91f2b;color:#fff}
