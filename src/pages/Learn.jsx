@@ -1,23 +1,15 @@
 import SpanishVerbTrainer from "../SpanishVerbTrainer";
 import SpanishVocabulary from "../SpanishVocabulary";
-import { useEffect, useState } from "react";
-import { CheckCircle2, RotateCcw, Volume2, Languages, BookOpen, Brain, MessageCircle, ArrowDown, Sparkles, GraduationCap, CalendarDays, Trophy, Compass } from "lucide-react";
+import { useState } from "react";
+import { CheckCircle2, RotateCcw, Volume2, Languages, BookOpen, Brain, MessageCircle, ArrowDown, Sparkles, GraduationCap } from "lucide-react";
 
 const words=[["Hola","Hello"],["Buenos días","Good morning"],["Por favor","Please"],["Gracias","Thank you"],["¿Cómo estás?","How are you?"],["Me llamo…","My name is…"],["¿Dónde está…?","Where is…?"],["Hasta luego","See you later"],["Por supuesto","Of course"],["¡Buen viaje!","Have a good trip!"]];
 const questions=[{q:"What does “Gracias” mean?",opts:["Please","Thank you","Goodbye"],a:1,why:"Gracias means “Thank you”."},{q:"How do you say “Hello”?",opts:["Hola","Adiós","Perdón"],a:0,why:"Hola is the everyday Spanish greeting for “Hello”."},{q:"What does “Buenos días” mean?",opts:["Good night","Good afternoon","Good morning"],a:2,why:"Buenos días means “Good morning”."},{q:"How do you say “Please”?",opts:["Gracias","Por favor","Hasta luego"],a:1,why:"Por favor means “Please”."},{q:"What does “Me llamo…” mean?",opts:["I live…","I am…","My name is…"],a:2,why:"Me llamo… is used to introduce your name."}];
 
-const dailyPhrases=[["Cada día es una nueva oportunidad.","Every day is a new opportunity."],["Estoy aprendiendo español.","I am learning Spanish."],["Poco a poco se llega lejos.","Little by little, you go far."],["La práctica hace al maestro.","Practice makes perfect."],["Hoy es un buen día.","Today is a good day."],["Quiero hablar español.","I want to speak Spanish."],["Nunca dejes de aprender.","Never stop learning."]];
-const dailyIndex=Math.floor(Date.now()/86400000)%dailyPhrases.length;
 
 export default function Learn(){
   const [answers,setAnswers]=useState({});
   const [submitted,setSubmitted]=useState(false);
-  const questKey = `viva-spanish-quest-${new Date().toISOString().slice(0,10)}`;
-  const [questDone,setQuestDone]=useState(()=>{try{return JSON.parse(localStorage.getItem(questKey))||[false,false,false];}catch{return [false,false,false];}});
-  useEffect(()=>{try{localStorage.setItem(questKey,JSON.stringify(questDone));}catch{}},[questDone,questKey]);
-  const [phraseHint,setPhraseHint]=useState(false);
-  const questProgress=questDone.filter(Boolean).length;
-  const dailyPhrase=dailyPhrases[dailyIndex];
   const score=questions.filter((q,i)=>answers[i]===q.a).length;
   const say=word=>{if("speechSynthesis" in window){window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(word);u.lang="es-ES";window.speechSynthesis.speak(u);}};
   const scrollTo=id=>document.getElementById(id)?.scrollIntoView({behavior:"smooth",block:"start"});
@@ -47,19 +39,6 @@ export default function Learn(){
       <button onClick={()=>scrollTo("learn-vocabulary")}><span>02</span><BookOpen/> Vocabulary</button>
       <button onClick={()=>scrollTo("learn-verbs")}><span>03</span><GraduationCap/> Verb trainer</button>
     </nav>
-
-    <section className="learn-daily-quest" aria-labelledby="learn-quest-title">
-      <div className="learn-quest-top"><span className="learn-hero-kicker"><CalendarDays size={14}/> YOUR DAILY SPANISH MOMENT</span><span className="learn-quest-date">QUEST Nº {String(dailyIndex+1).padStart(2,"0")} · 5 MIN</span></div>
-      <div className="learn-quest-layout">
-        <div className="learn-quest-main"><div className="learn-quest-title-row"><Compass/><h2 id="learn-quest-title">The Spanish Daily Quest</h2></div><p className="learn-quest-intro">A tiny mission to make Spanish part of your everyday routine. Complete three steps and collect today’s passport stamp.</p>
-          <div className="learn-quest-phrase"><span>PHRASE OF THE DAY</span><strong>{dailyPhrase[0]}</strong><button type="button" onClick={()=>say(dailyPhrase[0])}><Volume2 size={15}/> Listen</button><button type="button" className="learn-quest-meaning" onClick={()=>setPhraseHint(!phraseHint)}>{phraseHint?"Hide meaning":"Reveal meaning"}</button>{phraseHint&&<p>{dailyPhrase[1]}</p>}</div>
-        </div>
-        <div className="learn-quest-side"><div className="learn-quest-progress"><div><span>TODAY’S PROGRESS</span><strong>{questProgress}/3</strong></div><div className="learn-quest-track"><span style={{width:`${questProgress/3*100}%`}}/></div></div>
-          {["Listen to the phrase of the day","Say it aloud three times","Finish one quick knowledge check"].map((task,i)=><label className={`learn-quest-task ${questDone[i]?"is-done":""}`} key={task}><input type="checkbox" checked={!!questDone[i]} onChange={e=>setQuestDone(old=>old.map((v,j)=>j===i?e.target.checked:v))}/><span className="learn-quest-check"><CheckCircle2 size={17}/></span><span>{task}</span></label>)}
-          {questProgress===3&&<div className="learn-quest-complete"><Trophy size={17}/> ¡Muy bien! Today’s stamp is yours.</div>}
-        </div>
-      </div>
-    </section>
 
     <section className="learn-section-block" id="learn-phrasebook">
       <div className="learn-section-heading">
