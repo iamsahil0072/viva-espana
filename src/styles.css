@@ -1020,3 +1020,163 @@ body { background: var(--paper); }
   .festivals-section-label { align-items: flex-start; flex-direction: column; gap: 6px; }
   .festivals-page .festival-image { height: 220px; }
 }
+
+
+/* LEARN PAGE — SPANISH STUDY STUDIO */
+.learn-page .learn-intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 255px;
+  align-items: center;
+  gap: 48px;
+}
+.learn-page .page-intro { margin-bottom: 48px; }
+.learn-intro-note {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  padding: 25px 26px 23px;
+  min-height: 190px;
+  background: linear-gradient(145deg, #f4eadd, #fbf6ed);
+  border: 1px solid #e7d9c8;
+  border-radius: 8px;
+}
+.learn-intro-note::after {
+  content: "¿";
+  position: absolute;
+  right: 9px;
+  bottom: -42px;
+  color: rgba(137, 37, 44, .07);
+  font: 600 150px/.9 var(--serif);
+}
+.learn-intro-note strong {
+  color: var(--red);
+  font: 600 43px/1 var(--serif);
+}
+.learn-intro-note p {
+  position: relative;
+  z-index: 1;
+  max-width: 210px;
+  color: var(--muted);
+  font: 500 15px/1.55 var(--serif);
+  margin: 0;
+}
+.learn-note-rule {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 8px;
+  letter-spacing: 1.5px;
+}
+.learn-page .vocab-section { margin-top: 8px; }
+.learn-page .section-heading { margin-bottom: 22px; }
+.learn-page .vocab-card {
+  min-height: 155px;
+  padding: 20px 18px;
+  border-radius: 8px;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.learn-page .vocab-card:hover {
+  transform: translateY(-5px);
+  border-color: #d7b9a4;
+  box-shadow: 0 14px 30px rgba(48,31,20,.09);
+}
+.learn-page .vocab-number {
+  color: var(--red);
+  letter-spacing: 1px;
+}
+.learn-page .vocab-card h3 {
+  font-size: 20px;
+  line-height: 1.25;
+}
+.learn-page .sound-button {
+  transition: transform .2s ease, background .2s ease;
+}
+.learn-page .sound-button:hover { transform: scale(1.08); background: #ead8c9; }
+.learn-page .quiz-panel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 65px;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid #e7d9c8;
+  border-radius: 9px;
+}
+.learn-page .quiz-panel::before {
+  content: "ES";
+  position: absolute;
+  top: -25px;
+  right: 24px;
+  color: rgba(137,37,44,.055);
+  font: 600 120px/1 var(--serif);
+  pointer-events: none;
+}
+.learn-page .quiz-heading { position: relative; z-index: 1; }
+.learn-page .quiz-icon { border-radius: 50%; box-shadow: 0 7px 17px rgba(100,25,35,.16); }
+.learn-page .quiz-heading h2 { font-size: clamp(27px, 3vw, 34px); }
+.learn-page .quiz-question {
+  position: relative;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+}
+.learn-page .quiz-question h3 { font: 600 20px/1.4 var(--serif); }
+.learn-page .quiz-q-number {
+  color: var(--red);
+  font-size: 8px;
+  letter-spacing: 1.5px;
+}
+.learn-page .quiz-options button {
+  min-height: 43px;
+  border-radius: 5px;
+  transition: border-color .2s, background .2s, transform .2s;
+}
+.learn-page .quiz-options button:hover:not(:disabled) {
+  border-color: var(--red);
+  transform: translateY(-2px);
+}
+.learn-page .quiz-footer { position: relative; z-index: 1; }
+.learn-page .learn-tool-heading {
+  max-width: 760px;
+  margin: 80px auto 30px;
+  text-align: center;
+}
+.learn-page .learn-tool-heading h2 {
+  margin: 10px 0 8px;
+  font: 600 clamp(30px, 4vw, 43px)/1.1 var(--serif);
+  letter-spacing: -.6px;
+}
+.learn-page .learn-tool-heading p {
+  max-width: 510px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.learn-page .sv-wrap,
+.learn-page .verb-trainer {
+  border-radius: 10px;
+  box-shadow: 0 10px 34px rgba(48,31,20,.055);
+}
+.dark .learn-intro-note {
+  background: linear-gradient(145deg, #302923, #27231f);
+  border-color: var(--line);
+}
+.dark .learn-page .quiz-panel { border-color: var(--line); }
+@media (max-width: 760px) {
+  .learn-page .learn-intro-layout { grid-template-columns: 1fr; gap: 0; }
+  .learn-intro-note {
+    min-height: auto;
+    margin: -12px 0 36px;
+    padding: 19px 21px;
+  }
+  .learn-intro-note p { max-width: 340px; }
+  .learn-page .vocab-section { margin-top: 0; }
+  .learn-page .quiz-panel { margin-top: 48px; }
+  .learn-page .learn-tool-heading { margin: 60px auto 25px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .learn-page .vocab-card,
+  .learn-page .sound-button,
+  .learn-page .quiz-options button { transition: none !important; }
+}
