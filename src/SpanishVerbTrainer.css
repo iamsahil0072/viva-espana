@@ -56,3 +56,29 @@
   .verb-table-title{align-items:flex-start;flex-direction:column}.verb-quiz-actions{flex-wrap:wrap}
 }
 @media(prefers-reduced-motion:reduce){.verb-trainer *{transition:none!important;scroll-behavior:auto!important}}
+
+
+/* Dark theme */
+.dark .verb-trainer{--learn-red:#ef777c;--learn-red-dark:#ff9a9e;--learn-paper:#252321;--learn-cream:#211f1d;--learn-line:#403a35;--learn-muted:#b7ada2;color:#f3eee8;background:linear-gradient(145deg,#252321 0%,#1d1b1a 100%);border-color:#403a35;box-shadow:0 18px 48px rgba(0,0,0,.2)}
+.dark .verb-trainer-header h2,.dark .verb-table-title h3,.dark .verb-quiz h3,.dark .verb-question,.dark .verb-table-row strong{color:#f3eee8}
+.dark .verb-trainer-header p,.dark .verb-controls label,.dark .verb-footnote{color:#b7ada2}
+.dark .verb-header-icon,.dark .verb-table-wrap,.dark .verb-quiz{background:#292623;border-color:#49413a}
+.dark .verb-controls select{color:#f3eee8;background:#302c28;border-color:#49413a}
+.dark .verb-controls select option{background:#302c28;color:#f3eee8}
+.dark .verb-tense-pill{color:#ff999c;background:#3b2928;border-color:#684044}
+.dark .verb-table-row{color:#c4b9ad;background:#302c28;border-color:#49413a}
+.dark .verb-table-row:hover{background:#38302b;border-color:#87565a}
+.dark .verb-table-row button,.dark .verb-listen{color:#ff999c;background:#3b2928;border-color:#684044}
+.dark .verb-table-row button:hover,.dark .verb-listen:hover{background:#503236}
+.dark .verb-score{color:#ef8589}
+.dark .verb-options button{color:#e5dcd2;background:#302c28;border-color:#49413a}
+.dark .verb-options button:hover:not(:disabled){background:#3a302d;border-color:#87565a}
+.dark .verb-options button.is-selected{background:#402e2e;border-color:#a45f63;color:#ffd1d2}
+.dark .verb-options button.is-correct{background:#26382d;border-color:#53775e;color:#a8d3b1}
+.dark .verb-options button.is-wrong{background:#402729;border-color:#875052;color:#ffaaaa}
+.dark .verb-feedback.good{color:#a8d3b1}
+.dark .verb-feedback.bad{color:#ffaaaa}
+.dark .verb-primary{background:#a91f2b;border-color:#a91f2b;color:#fff}
+.dark .verb-primary:hover:not(:disabled){background:#841923}
+.dark .verb-reset{color:#d0c6bb;border-color:#5a5148}
+.dark .verb-reset:hover{background:#38302b;border-color:#78675b}
