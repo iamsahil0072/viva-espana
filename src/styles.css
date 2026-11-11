@@ -508,3 +508,33 @@ body { background: var(--paper); }
   .explore-grid .city-card h3 { font-size: 23px; }
   .explore-overview-copy p { font-size: 15px; }
 }
+
+
+/* EXPLORE PAGE — TABLET SPACING REFINEMENT */
+@media (min-width: 761px) and (max-width: 980px) {
+  .explore-overview {
+    grid-template-columns: minmax(0, 1fr) minmax(105px, 135px) minmax(120px, 155px);
+    gap: 18px;
+    padding: 22px 20px;
+    margin-bottom: 48px;
+  }
+  .explore-overview-copy p { font-size: 15px; }
+  .explore-stat { padding-left: 14px; }
+  .explore-stat strong { font-size: 30px; }
+  .explore-stat span {
+    max-width: 100%;
+    font-size: 7px;
+    letter-spacing: .7px;
+    overflow-wrap: anywhere;
+  }
+  .explore-search-heading { gap: 12px; }
+  .explore-search-hint { font-size: 9px; }
+  .explore-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .explore-grid .card-image-wrap { height: 205px; }
+}
+@media (max-width: 760px) {
+  .explore-overview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .explore-stat { min-width: 0; }
+  .explore-stat strong { font-size: 30px; }
+  .explore-stat span { max-width: 100%; overflow-wrap: anywhere; }
+}
