@@ -1678,3 +1678,19 @@ body { background: var(--paper); }
     will-change: auto;
   }
 }
+
+
+/* Spanish mini quiz: reveal its heading, each question card and action row. */
+.main-content .quiz-heading,
+.main-content .quiz-question,
+.main-content .quiz-footer {
+  transition:
+    opacity .65s cubic-bezier(.2,.7,.2,1),
+    transform .65s cubic-bezier(.2,.7,.2,1);
+}
+.main-content .quiz-question:nth-child(even) {
+  transition-delay: .08s;
+}
+.main-content .quiz-question:nth-child(odd) {
+  transition-delay: 0s;
+}
