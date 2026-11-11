@@ -901,3 +901,122 @@ body { background: var(--paper); }
     transform: none !important;
   }
 }
+
+
+/* FESTIVALS PAGE — EDITORIAL CALENDAR */
+.festivals-page .festivals-intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  align-items: center;
+  gap: 52px;
+}
+.festivals-page .page-intro { margin-bottom: 46px; }
+.festivals-intro-note {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+  padding: 24px 25px;
+  background: linear-gradient(145deg, #f4ebdf, #fbf6ee);
+  border: 1px solid #e8ddcf;
+  border-radius: 8px;
+  color: var(--red);
+}
+.festivals-intro-note strong {
+  font: 600 46px/.95 var(--serif);
+  color: var(--ink);
+}
+.festivals-intro-note span,
+.festivals-section-label > span:last-child {
+  font-size: 8px;
+  letter-spacing: 1.35px;
+  color: var(--muted);
+}
+.festivals-intro-note p {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font: 500 15px/1.5 var(--serif);
+}
+.festivals-section-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 15px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid var(--line);
+}
+.festivals-page .festival-list { gap: 34px; }
+.festivals-page .festival-row {
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 58px);
+  padding-bottom: 34px;
+}
+.festivals-page .festival-image {
+  height: 315px;
+  position: relative;
+  border-radius: 7px;
+  background: var(--soft);
+}
+.festivals-page .festival-image img {
+  transition: transform .8s cubic-bezier(.2,.7,.2,1), filter .4s ease;
+}
+.festivals-page .festival-row:hover .festival-image img {
+  transform: scale(1.055);
+  filter: saturate(1.08);
+}
+.festival-image-number {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(91, 28, 30, .88);
+  font: 500 13px var(--serif);
+  border: 1px solid rgba(255,255,255,.45);
+}
+.festivals-page .festival-info { padding: 10px 0; }
+.festivals-page .festival-info h2 {
+  font-size: clamp(29px, 3vw, 39px);
+  line-height: 1.08;
+  margin: 12px 0 14px;
+}
+.festivals-page .festival-info > p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+.festivals-page .festival-meta {
+  gap: 20px 25px;
+  padding-top: 5px;
+}
+.festivals-page .festival-meta span {
+  font-size: 10px;
+  letter-spacing: .15px;
+}
+.dark .festivals-intro-note {
+  background: linear-gradient(145deg, #302b25, #27231f);
+  border-color: var(--line);
+}
+@media (max-width: 760px) {
+  .festivals-page .festivals-intro-layout { grid-template-columns: 1fr; gap: 0; }
+  .festivals-intro-note {
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    column-gap: 12px;
+    margin: -10px 0 36px;
+    padding: 16px 18px;
+  }
+  .festivals-intro-note strong { font-size: 34px; }
+  .festivals-intro-note span { grid-column: 3; }
+  .festivals-intro-note p { grid-column: 1 / -1; margin-top: 4px; }
+  .festivals-page .festival-row { grid-template-columns: 1fr; gap: 17px; }
+  .festivals-page .festival-image { height: 260px; }
+  .festivals-page .festival-info { padding: 0 2px; }
+}
+@media (max-width: 420px) {
+  .festivals-section-label { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .festivals-page .festival-image { height: 220px; }
+}
