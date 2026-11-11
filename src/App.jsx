@@ -46,7 +46,17 @@ function ScrollReveal(){
       '.main-content .learn-intro-note',
       '.main-content .vocab-section',
       '.main-content .sv-wrap',
-      '.main-content .verb-trainer'
+      '.main-content .verb-trainer',
+      '.main-content .sv-heading',
+      '.main-content .sv-stats',
+      '.main-content .sv-toolbar',
+      '.main-content .sv-flashcard',
+      '.main-content .sv-word-list',
+      '.main-content .sv-quiz',
+      '.main-content .verb-trainer-header',
+      '.main-content .verb-table-wrap',
+      '.main-content .verb-quiz',
+      '.main-content .verb-question'
     ].join(','));
     if(!('IntersectionObserver' in window)){
       targets.forEach((element)=>element.classList.add('reveal-visible'));
