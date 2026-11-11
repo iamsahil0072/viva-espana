@@ -205,7 +205,7 @@ export const festivals = [
     when: 'May',
     place: 'Córdoba, Andalusia',
     text: 'A flower festival where residents open their courtyards decorated with beautiful plants and flowers.',
-    image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85'
+    image: 'https://www.reisroutes.be/userfiles/fotos/patio-festival-cordoba_1457_xl.jpg'
   }
 ];
  
