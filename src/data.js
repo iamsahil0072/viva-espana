@@ -107,11 +107,107 @@ export const foods = [
   }
 ];
 
-  
-
+ 
 export const festivals = [
-  { name:'La Tomatina', when:'Last Wednesday of August', place:'Buñol, Valencia', text:'A famous town celebration known for its playful tomato-throwing tradition.', image:'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1000&q=85' },
-  { name:'Feria de Abril', when:'Usually two weeks after Easter', place:'Seville, Andalusia', text:'A colourful fair with music, dancing, traditional outfits and decorated casetas.', image:'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1000&q=85' },
-  { name:'Las Fallas', when:'March', place:'Valencia', text:'An artistic festival featuring enormous sculptures, parades and spectacular celebrations.', image:'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1000&q=85' },
-  { name:'San Fermín', when:'6–14 July', place:'Pamplona, Navarra', text:'A historic festival with processions, music and traditional events throughout the city.', image:'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=85' }
+  {
+    name: 'La Tomatina',
+    when: 'Last Wednesday of August',
+    place: 'Buñol, Valencia',
+    text: 'A famous town celebration known for its playful tomato-throwing tradition.',
+    image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Feria de Abril',
+    when: 'Usually two weeks after Easter',
+    place: 'Seville, Andalusia',
+    text: 'A colourful fair with music, dancing, traditional outfits and decorated casetas.',
+    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Las Fallas',
+    when: 'March',
+    place: 'Valencia',
+    text: 'An artistic festival featuring enormous sculptures, parades and spectacular celebrations.',
+    image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'San Fermín',
+    when: '6–14 July',
+    place: 'Pamplona, Navarra',
+    text: 'A historic festival with processions, music and traditional events throughout the city.',
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Semana Santa',
+    when: 'March or April',
+    place: 'Seville, Andalusia',
+    text: 'Holy Week celebrations featuring traditional processions, religious music and beautiful decorations.',
+    image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Carnaval de Cádiz',
+    when: 'February or March',
+    place: 'Cádiz, Andalusia',
+    text: 'A lively carnival famous for colourful costumes, humorous songs and street performances.',
+    image: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Sant Jordi',
+    when: '23 April',
+    place: 'Barcelona, Catalonia',
+    text: 'A beautiful celebration of books and roses, when streets fill with bookstalls and flowers.',
+    image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'San Isidro',
+    when: '15 May',
+    place: 'Madrid',
+    text: 'Madrid honours its patron saint with traditional clothing, music, dancing and local food.',
+    image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Noche de San Juan',
+    when: '23–24 June',
+    place: 'Across Spain',
+    text: 'A midsummer celebration with beach gatherings, music and bonfires in many coastal towns.',
+    image: 'https://images.unsplash.com/photo-1663247168201-1d6ea2d448fc?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Día de los Reyes Magos',
+    when: '6 January',
+    place: 'Across Spain',
+    text: 'Three Kings Day is celebrated with colourful parades, gifts and the traditional Roscón de Reyes cake.',
+    image: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Feria de Córdoba',
+    when: 'May',
+    place: 'Córdoba, Andalusia',
+    text: 'A festive fair featuring traditional music, dancing, food and decorated tents.',
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'La Tamborrada',
+    when: '20 January',
+    place: 'San Sebastián, Basque Country',
+    text: 'A spectacular celebration where people march through the streets playing drums.',
+    image: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Moros y Cristianos',
+    when: 'Throughout the year',
+    place: 'Alicante and Valencia',
+    text: 'Colourful historical celebrations featuring elaborate costumes, parades and music.',
+    image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1000&q=85'
+  },
+  {
+    name: 'Patios de Córdoba',
+    when: 'May',
+    place: 'Córdoba, Andalusia',
+    text: 'A flower festival where residents open their courtyards decorated with beautiful plants and flowers.',
+    image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85'
+  }
 ];
+ 
+
+
