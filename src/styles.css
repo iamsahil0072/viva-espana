@@ -1538,3 +1538,103 @@ body { background: var(--paper); }
     box-shadow: 0 16px 24px rgba(0, 0, 0, .22);
   }
 }
+
+
+/* ONE CONSISTENT ENTRANCE MOTION SYSTEM — ALL PAGES */
+:root {
+  --site-motion-duration: .65s;
+  --site-motion-ease: cubic-bezier(.2, .7, .2, 1);
+  --site-motion-distance: 18px;
+}
+@keyframes siteFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(var(--site-motion-distance));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Top-level sections use the same entrance on Home and every inner page. */
+.main-content > *,
+.main-content > .page-shell > * {
+  animation: siteFadeUp var(--site-motion-duration) var(--site-motion-ease) both;
+}
+
+/* Shared page headings, editorial blocks and cards use the identical motion curve. */
+.main-content .page-intro,
+.main-content .section-heading,
+.main-content .explore-overview,
+.main-content .explore-search-heading,
+.main-content .search-bar,
+.main-content .city-card,
+.main-content .food-card,
+.main-content .culture-card,
+.main-content .culture-extra-card,
+.main-content .festival-row,
+.main-content .home-festival-card,
+.main-content .vocab-card,
+.main-content .quiz-panel,
+.main-content .learn-tool-heading,
+.main-content .about-values > div,
+.main-content .project-credit {
+  animation-name: siteFadeUp;
+  animation-duration: var(--site-motion-duration);
+  animation-timing-function: var(--site-motion-ease);
+  animation-fill-mode: both;
+}
+
+/* Consistent, subtle stagger — no page-specific animation styles. */
+.main-content .city-card:nth-child(3n + 2),
+.main-content .food-card:nth-child(3n + 2),
+.main-content .culture-card:nth-child(2n + 2),
+.main-content .festival-row:nth-child(2n + 2),
+.main-content .home-festival-card:nth-child(3n + 2),
+.main-content .vocab-card:nth-child(5n + 2),
+.main-content .about-values > div:nth-child(2) {
+  animation-delay: .08s;
+}
+.main-content .city-card:nth-child(3n + 3),
+.main-content .food-card:nth-child(3n + 3),
+.main-content .culture-card:nth-child(2n + 3),
+.main-content .festival-row:nth-child(2n + 3),
+.main-content .home-festival-card:nth-child(3n + 3),
+.main-content .vocab-card:nth-child(5n + 3),
+.main-content .about-values > div:nth-child(3) {
+  animation-delay: .16s;
+}
+
+/* Keep interaction states smooth without changing the shared entrance effect. */
+.main-content .city-card,
+.main-content .food-card,
+.main-content .culture-card,
+.main-content .culture-extra-card,
+.main-content .festival-row,
+.main-content .home-festival-card {
+  transition: transform .25s var(--site-motion-ease), box-shadow .25s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .main-content > *,
+  .main-content > .page-shell > *,
+  .main-content .page-intro,
+  .main-content .section-heading,
+  .main-content .explore-overview,
+  .main-content .explore-search-heading,
+  .main-content .search-bar,
+  .main-content .city-card,
+  .main-content .food-card,
+  .main-content .culture-card,
+  .main-content .culture-extra-card,
+  .main-content .festival-row,
+  .main-content .home-festival-card,
+  .main-content .vocab-card,
+  .main-content .quiz-panel,
+  .main-content .learn-tool-heading,
+  .main-content .about-values > div,
+  .main-content .project-credit {
+    animation: none !important;
+    transition: none !important;
+  }
+}
