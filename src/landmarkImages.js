@@ -1,0 +1,1 @@
+export const landmarkImages = {};\n
