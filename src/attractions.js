@@ -8,7 +8,7 @@ export const attractions = {
     [
       "Park Güell",
       "Park Güell is a colourful public park on Carmel Hill, originally planned as part of a residential project. Gaudí filled it with curved forms, stone walkways and vibrant ceramic mosaics. The famous serpentine bench overlooks Barcelona, while the Dragon Stairway and Hypostyle Room are among its best-known features. The park combines landscaped spaces with imaginative architecture and memorable city views.",
-      "Park_Guell_2013.jpg"
+      "Park Güell Barcelona.jpg"
     ],
     [
       "Casa Batlló",
