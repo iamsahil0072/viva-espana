@@ -17,5 +17,14 @@ export const landmarkImages = {
   "Málaga|Gibralfaro Castle": "https://images.unsplash.com/photo-1560801514-a78bdf3a8a08?auto=format&fit=crop&w=900&q=85",
   "Málaga|Málaga Cathedral": "https://images.unsplash.com/photo-1792317227096-155e09f4013a?auto=format&fit=crop&w=900&q=85",
   "Barcelona|Gothic Quarter": "https://images.unsplash.com/photo-1745186487137-f0b9a7a7fa04?auto=format&fit=crop&w=900&q=85",
-  "Madrid|Prado Museum": "https://images.unsplash.com/photo-1765202663174-50da3b62ce4b?auto=format&fit=crop&w=900&q=85"
+  "Madrid|Prado Museum": "https://images.unsplash.com/photo-1765202663174-50da3b62ce4b?auto=format&fit=crop&w=900&q=85",
+  "Madrid|Plaza Mayor": "https://images.unsplash.com/photo-1743121252000-723e32073d2f?auto=format&fit=crop&w=900&q=85",
+  "Seville|Santa Cruz Quarter": "https://images.unsplash.com/photo-1661691050111-dfe0ada450df?auto=format&fit=crop&w=900&q=85",
+  "Granada|Granada Cathedral": "https://images.unsplash.com/photo-1674081363140-8b327a7a9976?auto=format&fit=crop&w=900&q=85",
+  "Valencia|Valencia Cathedral": "https://images.unsplash.com/photo-1691486868088-b790f0c3fd6a?auto=format&fit=crop&w=900&q=85",
+  "Valencia|La Lonja de la Seda": "https://images.unsplash.com/photo-1666861587911-2bee23407931?auto=format&fit=crop&w=900&q=85",
+  "Valencia|Central Market": "https://images.unsplash.com/photo-1666866673491-993674f6be79?auto=format&fit=crop&w=900&q=85",
+  "Córdoba|Mezquita-Catedral": "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?auto=format&fit=crop&w=900&q=85",
+  "Córdoba|Roman Bridge": "https://images.unsplash.com/photo-1653573986346-8222474c3f8a?auto=format&fit=crop&w=900&q=85",
+  "Málaga|Picasso Museum": "https://images.unsplash.com/photo-1730236828675-955b35c66d66?auto=format&fit=crop&w=900&q=85"
 };
