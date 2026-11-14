@@ -15,5 +15,7 @@ export const landmarkImages = {
   "Granada|Albaicín": "https://images.unsplash.com/photo-1646303168064-22af05e0f494?auto=format&fit=crop&w=900&q=85",
   "Málaga|Alcazaba": "https://images.unsplash.com/photo-1615839130907-2f68ca162d44?auto=format&fit=crop&w=900&q=85",
   "Málaga|Gibralfaro Castle": "https://images.unsplash.com/photo-1560801514-a78bdf3a8a08?auto=format&fit=crop&w=900&q=85",
-  "Málaga|Málaga Cathedral": "https://images.unsplash.com/photo-1792317227096-155e09f4013a?auto=format&fit=crop&w=900&q=85"
+  "Málaga|Málaga Cathedral": "https://images.unsplash.com/photo-1792317227096-155e09f4013a?auto=format&fit=crop&w=900&q=85",
+  "Barcelona|Gothic Quarter": "https://images.unsplash.com/photo-1745186487137-f0b9a7a7fa04?auto=format&fit=crop&w=900&q=85",
+  "Madrid|Prado Museum": "https://images.unsplash.com/photo-1765202663174-50da3b62ce4b?auto=format&fit=crop&w=900&q=85"
 };
