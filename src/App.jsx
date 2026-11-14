@@ -42,6 +42,7 @@ function ScrollReveal(){
       '.main-content .map-note',
       '.main-content .detail-hero',
       '.main-content .detail-text',
+      '.main-content .detail-place-card',
       '.main-content .festivals-intro-note',
       '.main-content .learn-intro-note',
       '.main-content .vocab-section',
