@@ -6,34 +6,23 @@ import { attractions } from '../attractions';
 import { CityCard, PageIntro } from '../components/UI';
 function AttractionImage({ placeName, cityName, placeImage }) {
   const [imageUrl, setImageUrl] = useState('');
+  const [fallbackUrl, setFallbackUrl] = useState('');
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     let active = true;
     setImageUrl('');
+    setFallbackUrl('');
     setFailed(false);
 
     const loadPhoto = async () => {
-      // The third field in attractions.js is the intended Commons file for this exact place.
-      if (placeImage) {
-        const exactFileUrl = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(placeImage)}?width=900`;
-        try {
-          const response = await fetch(exactFileUrl, { method: 'HEAD' });
-          if (response.ok && active) {
-            setImageUrl(exactFileUrl);
-            return;
-          }
-        } catch {}
-      }
-
-      // If that exact Commons file is unavailable, request the attraction's own Wikipedia page.
+      // Prepare an attraction-specific Wikipedia fallback before trying the Commons filename.
       const wikipediaTitles = {
         'The Alhambra': 'Alhambra',
         'Generalife Gardens': 'Generalife',
         'Real Alcázar': 'Alcázar of Seville',
         'Seville Cathedral & Giralda': 'Seville Cathedral',
-        'Spotify Camp Nou': 'Camp Nou',
-        'Santiago Bernabéu Stadium': 'Santiago Bernabéu Stadium'
+        'Spotify Camp Nou': 'Camp Nou'
       };
       try {
         const params = new URLSearchParams({
@@ -47,14 +36,19 @@ function AttractionImage({ placeName, cityName, placeImage }) {
           origin: '*'
         });
         const response = await fetch(`https://en.wikipedia.org/w/api.php?${params.toString()}`);
-        if (!response.ok) throw new Error('Wikipedia image lookup failed');
-        const data = await response.json();
-        const pages = Object.values(data.query?.pages || {});
-        const photo = pages.find(page => page.thumbnail?.source)?.thumbnail?.source;
-        if (active && photo) setImageUrl(photo);
-        else if (active) setFailed(true);
-      } catch {
-        if (active) setFailed(true);
+        if (response.ok) {
+          const data = await response.json();
+          const pages = Object.values(data.query?.pages || {});
+          const photo = pages.find(page => page.thumbnail?.source)?.thumbnail?.source;
+          if (active && photo) setFallbackUrl(photo);
+        }
+      } catch {}
+
+      // Use the attraction's own image filename from attractions.js as the primary image.
+      if (active && placeImage) {
+        setImageUrl(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(placeImage)}?width=900`);
+      } else if (active && !fallbackUrl) {
+        setFailed(true);
       }
     };
 
@@ -62,10 +56,18 @@ function AttractionImage({ placeName, cityName, placeImage }) {
     return () => { active = false; };
   }, [placeName, cityName, placeImage]);
 
+  const handleImageError = () => {
+    if (fallbackUrl && imageUrl !== fallbackUrl) {
+      setImageUrl(fallbackUrl);
+    } else {
+      setFailed(true);
+    }
+  };
+
   if (failed) return <div role="img" aria-label={`Photo unavailable for ${placeName}`} style={{width:'100%',height:'190px',background:'linear-gradient(135deg,#e9dfd0,#d8c7b2)',display:'grid',placeItems:'center',color:'#786b5e',fontSize:'.9rem'}}>Photo unavailable</div>;
   return (
     <div style={{width:'100%',height:'190px',background:'#eee5d9'}}>
-      {imageUrl && <img src={imageUrl} alt={placeName} loading="lazy" onError={() => setFailed(true)} style={{width:'100%',height:'190px',objectFit:'cover',display:'block'}} />}
+      {imageUrl && <img src={imageUrl} alt={placeName} loading="lazy" onError={handleImageError} style={{width:'100%',height:'190px',objectFit:'cover',display:'block'}} />}
     </div>
   );
 }
