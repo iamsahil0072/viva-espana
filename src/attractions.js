@@ -1,0 +1,266 @@
+export const attractions = {
+  'Barcelona': [
+    [
+      "Sagrada Família",
+      "Gaudí’s extraordinary basilica, famous for its detailed façades, tall towers and colourful stained glass.",
+      "Sagrada_Familia_from_plaza_de_Gaudi.jpg"
+    ],
+    [
+      "Park Güell",
+      "A colourful hilltop park filled with mosaics, imaginative architecture and city views.",
+      "Park_Guell_2013.jpg"
+    ],
+    [
+      "Casa Batlló",
+      "A celebrated Modernisme building on Passeig de Gràcia, recognised for its flowing façade.",
+      "Casa_Batllo_Barcelona.jpg"
+    ],
+    [
+      "Gothic Quarter",
+      "A historic maze of medieval lanes, small squares and Barcelona Cathedral.",
+      "Barcelona_Cathedral_-_Barcelona,_Spain_-_Jan_2013.jpg"
+    ]
+  ],
+  'Madrid': [
+    [
+      "Royal Palace of Madrid",
+      "A grand royal residence with richly decorated rooms and formal halls.",
+      "Palacio_Real_de_Madrid_-_01.jpg"
+    ],
+    [
+      "Prado Museum",
+      "One of Europe’s major art museums, with important works by Velázquez and Goya.",
+      "Museo_del_Prado_2016.jpg"
+    ],
+    [
+      "Retiro Park",
+      "A historic green space with gardens, tree-lined paths and a boating lake.",
+      "Parque_del_Retiro_Madrid.jpg"
+    ],
+    [
+      "Plaza Mayor",
+      "A beautiful arcaded square that has long been a centre of Madrid’s public life.",
+      "Plaza_Mayor_de_Madrid_06.jpg"
+    ]
+  ],
+  'Seville': [
+    [
+      "Real Alcázar",
+      "A royal palace complex known for Mudéjar decoration, courtyards and landscaped gardens.",
+      "Real_Alcázar_de_Sevilla_-_Patio_de_las_Doncellas.jpg"
+    ],
+    [
+      "Seville Cathedral & Giralda",
+      "A monumental Gothic cathedral beside the former minaret that became the Giralda tower.",
+      "Catedral_de_Sevilla_-_Giralda.jpg"
+    ],
+    [
+      "Plaza de España",
+      "A sweeping semicircular plaza with tiled bridges, decorative alcoves and a canal.",
+      "Plaza_de_España,_Sevilla,_Spain.jpg"
+    ],
+    [
+      "Santa Cruz Quarter",
+      "A historic neighbourhood of narrow lanes, orange trees and traditional houses.",
+      "Barrio_de_Santa_Cruz_Sevilla.jpg"
+    ]
+  ],
+  'Granada': [
+    [
+      "The Alhambra",
+      "A hilltop palace and fortress celebrated for Nasrid courtyards, carved details and city views.",
+      "Alhambra_Granada_Spain.jpg"
+    ],
+    [
+      "Generalife Gardens",
+      "The former summer estate of the Nasrid rulers, with fountains, terraces and gardens.",
+      "Generalife_Granada.jpg"
+    ],
+    [
+      "Albaicín",
+      "A historic hillside district of winding streets and white houses overlooking the Alhambra.",
+      "Albaicin_Granada_Spain.jpg"
+    ],
+    [
+      "Granada Cathedral",
+      "A Renaissance cathedral in the city centre with a monumental façade and grand interior.",
+      "Granada_Cathedral_Spain.jpg"
+    ]
+  ],
+  'Valencia': [
+    [
+      "City of Arts and Sciences",
+      "A striking modern complex devoted to science, culture and leisure.",
+      "Ciutat_de_les_Arts_i_les_Ciències_València.jpg"
+    ],
+    [
+      "Valencia Cathedral",
+      "A historic cathedral in the old town, combining several architectural styles.",
+      "Valencia_Cathedral_2014.jpg"
+    ],
+    [
+      "La Lonja de la Seda",
+      "A UNESCO-listed Gothic building that recalls Valencia’s medieval trading history.",
+      "Llotja_de_la_Seda_Valencia.jpg"
+    ],
+    [
+      "Central Market",
+      "A lively covered market in a beautiful building, filled with local produce and food stalls.",
+      "Mercat_Central_de_València.jpg"
+    ]
+  ],
+  'Bilbao': [
+    [
+      "Guggenheim Museum",
+      "Frank Gehry’s landmark museum is known for its sculptural exterior and contemporary art.",
+      "Guggenheim_Bilbao_2007.jpg"
+    ],
+    [
+      "Casco Viejo",
+      "Bilbao’s old town, with historic streets, traditional shops and pintxos bars.",
+      "Casco_Viejo_Bilbao.jpg"
+    ],
+    [
+      "Zubizuri Bridge",
+      "A distinctive white pedestrian bridge crossing the Nervión River.",
+      "Zubizuri_Bridge_Bilbao.jpg"
+    ],
+    [
+      "Doña Casilda Park",
+      "A leafy city park with paths, fountains and ponds.",
+      "Parque_de_Doña_Casilda_Bilbao.jpg"
+    ]
+  ],
+  'Córdoba': [
+    [
+      "Mezquita-Catedral",
+      "The famous mosque-cathedral, admired for its forest of columns and double arches.",
+      "Mezquita_Catedral_de_Córdoba.jpg"
+    ],
+    [
+      "Roman Bridge",
+      "An ancient bridge across the Guadalquivir River with views of the old city.",
+      "Puente_Romano_Cordoba.jpg"
+    ],
+    [
+      "Alcázar de los Reyes Cristianos",
+      "A historic fortress-palace with gardens, towers and traces of different eras.",
+      "Alcazar_de_los_Reyes_Cristianos_Cordoba.jpg"
+    ],
+    [
+      "Jewish Quarter",
+      "A maze of narrow streets and traditional courtyards near the old city walls.",
+      "Juderia_Cordoba_Spain.jpg"
+    ]
+  ],
+  'Málaga': [
+    [
+      "Alcazaba",
+      "A Moorish fortress with courtyards, gardens and views over the city and port.",
+      "Alcazaba_de_Málaga.jpg"
+    ],
+    [
+      "Gibralfaro Castle",
+      "A hilltop castle overlooking Málaga, its harbour and the Mediterranean coast.",
+      "Castillo_de_Gibralfaro_Malaga.jpg"
+    ],
+    [
+      "Málaga Cathedral",
+      "A grand Renaissance cathedral in the historic centre, known locally as La Manquita.",
+      "Catedral_de_Málaga.jpg"
+    ],
+    [
+      "Picasso Museum",
+      "A museum dedicated to Pablo Picasso, who was born in Málaga.",
+      "Museo_Picasso_Málaga.jpg"
+    ]
+  ],
+  'San Sebastián': [
+    [
+      "La Concha Bay",
+      "The iconic crescent-shaped bay, with a sandy beach and elegant promenade.",
+      "Playa_de_la_Concha_San_Sebastian.jpg"
+    ],
+    [
+      "Parte Vieja",
+      "The lively old town, known for traditional buildings, squares and pintxos bars.",
+      "Parte_Vieja_San_Sebastian.jpg"
+    ],
+    [
+      "Monte Igueldo",
+      "A hilltop viewpoint with panoramic views of the bay and coastline.",
+      "Monte_Igueldo_San_Sebastian.jpg"
+    ],
+    [
+      "Peine del Viento",
+      "Seaside sculptures by Eduardo Chillida set among rocks at the edge of the sea.",
+      "Peine_del_Viento_San_Sebastian.jpg"
+    ]
+  ],
+  'Santiago de Compostela': [
+    [
+      "Santiago Cathedral",
+      "The celebrated destination of the Camino de Santiago, with a richly historic interior.",
+      "Catedral_de_Santiago_de_Compostela.jpg"
+    ],
+    [
+      "Praza do Obradoiro",
+      "The grand square in front of the cathedral, where arriving pilgrims gather.",
+      "Praza_do_Obradoiro_Santiago_de_Compostela.jpg"
+    ],
+    [
+      "Hostal dos Reis Católicos",
+      "A historic building beside the cathedral, originally founded as a royal pilgrim hospital.",
+      "Hostal_dos_Reis_Católicos_Santiago.jpg"
+    ],
+    [
+      "Mercado de Abastos",
+      "A traditional food market showcasing Galician produce and regional specialities.",
+      "Mercado_de_Abastos_Santiago_de_Compostela.jpg"
+    ]
+  ],
+  'Toledo': [
+    [
+      "Toledo Cathedral",
+      "A major Gothic cathedral with an elaborate interior, chapels and important artworks.",
+      "Catedral_de_Toledo_-_Spain.jpg"
+    ],
+    [
+      "Alcázar of Toledo",
+      "A fortress-like landmark on the highest part of the city, now home to the Army Museum.",
+      "Alcázar_de_Toledo.jpg"
+    ],
+    [
+      "Monastery of San Juan de los Reyes",
+      "A Gothic monastery built under the Catholic Monarchs, known for its cloister.",
+      "Monasterio_de_San_Juan_de_los_Reyes_Toledo.jpg"
+    ],
+    [
+      "Mirador del Valle",
+      "A viewpoint across the Tagus River with a panoramic view of Toledo’s skyline.",
+      "Toledo_view_from_Mirador_del_Valle.jpg"
+    ]
+  ],
+  'Zaragoza': [
+    [
+      "Basílica del Pilar",
+      "A monumental basilica beside the Ebro River, recognised by its many domes and towers.",
+      "Basílica_del_Pilar_Zaragoza.jpg"
+    ],
+    [
+      "Aljafería Palace",
+      "A fortified palace with Islamic-era arches and decoration.",
+      "Palacio_de_la_Aljafería_Zaragoza.jpg"
+    ],
+    [
+      "La Seo Cathedral",
+      "A historic cathedral blending Romanesque, Gothic, Mudéjar and Baroque styles.",
+      "Catedral_del_Salvador_de_Zaragoza_-_La_Seo.jpg"
+    ],
+    [
+      "Puente de Piedra",
+      "A historic stone bridge across the Ebro with views of the Basilica del Pilar.",
+      "Puente_de_Piedra_Zaragoza.jpg"
+    ]
+  ]
+};
