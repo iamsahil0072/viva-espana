@@ -1,1 +1,1 @@
-export const landmarkImages = {};\n
+export const landmarkImages = {};
