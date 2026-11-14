@@ -49,32 +49,7 @@ function AttractionImage({ placeName, cityName, fallbackImage }) {
         }
       } catch {}
 
-      // If Wikipedia has no page image, search Wikimedia Commons.
-      try {
-        const commonsParams = new URLSearchParams({
-          action: 'query',
-          generator: 'search',
-          gsrsearch: `"${placeName}" ${cityName}`,
-          gsrnamespace: '6',
-          gsrlimit: '10',
-          prop: 'imageinfo',
-          iiprop: 'url',
-          iiurlwidth: '900',
-          format: 'json',
-          origin: '*'
-        });
-        const commonsResponse = await fetch(`https://commons.wikimedia.org/w/api.php?${commonsParams.toString()}`);
-        if (commonsResponse.ok) {
-          const commonsData = await commonsResponse.json();
-          const pages = Object.values(commonsData.query?.pages || {});
-          const photo = pages.find(page => page.imageinfo?.[0]?.thumburl || page.imageinfo?.[0]?.url);
-          const url = photo?.imageinfo?.[0]?.thumburl || photo?.imageinfo?.[0]?.url;
-          if (active && url) {
-            setImageUrl(url);
-            return;
-          }
-        }
-      } catch {}
+
 
       // Always show a real destination photo instead of an empty card.
       if (active) setUsingFallback(true);
