@@ -29,4 +29,23 @@ export const landmarkImages = {
   "Málaga|Picasso Museum": "https://images.unsplash.com/photo-1730236828675-955b35c66d66?auto=format&fit=crop&w=900&q=85",
   "Córdoba|Alcázar de los Reyes Cristianos": "https://commons.wikimedia.org/wiki/Special:FilePath/Alc%C3%A1zar_de_los_Reyes_Cristianos%2C_Cordoba.jpg?width=900",
   "Córdoba|Jewish Quarter": "https://commons.wikimedia.org/wiki/Special:FilePath/Juderia_-_Cordoba%2C_Spain_%2811174771356%29.jpg?width=900"
+,
+  "Bilbao|Casco Viejo": "https://commons.wikimedia.org/wiki/Special:FilePath/Casco%20Viejo%20de%20Bilbao.jpg?width=900",
+  "Bilbao|Zubizuri Bridge": "https://commons.wikimedia.org/wiki/Special:FilePath/Zubizuri%20bridge%20Bilbao.jpg?width=900",
+  "Bilbao|Doña Casilda Park": "https://commons.wikimedia.org/wiki/Special:FilePath/Parque%20de%20Do%C3%B1a%20Casilda%20de%20Iturrizar.jpg?width=900",
+  "San Sebastián|La Concha Bay": "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Sebastian%20-%20La%20Concha.jpg?width=900",
+  "San Sebastián|Parte Vieja": "https://commons.wikimedia.org/wiki/Special:FilePath/Parte%20Vieja%20de%20Donostia-San%20Sebasti%C3%A1n.jpg?width=900",
+  "San Sebastián|Monte Igueldo": "https://commons.wikimedia.org/wiki/Special:FilePath/Monte%20Igueldo%2C%20San%20Sebastian.jpg?width=900",
+  "San Sebastián|Peine del Viento": "https://commons.wikimedia.org/wiki/Special:FilePath/Peine%20del%20viento.jpg?width=900",
+  "Santiago de Compostela|Santiago Cathedral": "https://commons.wikimedia.org/wiki/Special:FilePath/Catedral%20de%20Santiago%20de%20Compostela.jpg?width=900",
+  "Santiago de Compostela|Praza do Obradoiro": "https://commons.wikimedia.org/wiki/Special:FilePath/Obradoiro%20square%20-%20Hostal%20de%20los%20Reyes%20Cat%C3%B3licos.JPG?width=900",
+  "Santiago de Compostela|Hostal dos Reis Católicos": "https://commons.wikimedia.org/wiki/Special:FilePath/Hostal%20dos%20Reis%20Cat%C3%B3licos.%20Praza%20do%20obradoiro.%20Santiago%20de%20Compostela.jpg?width=900",
+  "Santiago de Compostela|Mercado de Abastos": "https://commons.wikimedia.org/wiki/Special:FilePath/Praza%20de%20abastos%20de%20Santiago%20de%20Compostela.jpg?width=900",
+  "Toledo|Toledo Cathedral": "https://commons.wikimedia.org/wiki/Special:FilePath/Catedral%20de%20Santa%20Mar%C3%ADa%20de%20Toledo-%20Espa%C3%B1a.jpg?width=900",
+  "Toledo|Alcázar of Toledo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alc%C3%A1zar%20de%20Toledo.jpg?width=900",
+  "Toledo|Monastery of San Juan de los Reyes": "https://commons.wikimedia.org/wiki/Special:FilePath/Monastery%20of%20San%20Juan%20de%20los%20Reyes%2C%20Toledo.jpg?width=900",
+  "Zaragoza|Basílica del Pilar": "https://commons.wikimedia.org/wiki/Special:FilePath/Bas%C3%ADlica%20de%20Nuestra%20Se%C3%B1ora%20del%20Pilar%20(Zaragoza).jpg?width=900",
+  "Zaragoza|Aljafería Palace": "https://commons.wikimedia.org/wiki/Special:FilePath/Palacio%20de%20la%20Aljafer%C3%ADa%20001.jpg?width=900",
+  "Zaragoza|La Seo Cathedral": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Seo%20de%20Zaragoza%2C%20el%20puente%20de%20piedra%20y%20el%20Pilar.jpg?width=900",
+  "Zaragoza|Puente de Piedra": "https://commons.wikimedia.org/wiki/Special:FilePath/Puente%20de%20Piedra%2C%20Zaragoza.jpg?width=900"
 };
