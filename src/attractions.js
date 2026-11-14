@@ -19,6 +19,16 @@ export const attractions = {
       "Gothic Quarter",
       "A historic maze of medieval lanes, small squares and Barcelona Cathedral.",
       "Barcelona_Cathedral_-_Barcelona,_Spain_-_Jan_2013.jpg"
+    ],
+    [
+      "Montjuïc",
+      "A hill above the harbour with gardens, museums, a castle and wide city views.",
+      "Montjuic_Barcelona.jpg"
+    ],
+    [
+      "Palau de la Música Catalana",
+      "A Modernisme concert hall with a colourful stained-glass skylight and ornate auditorium.",
+      "Palau_de_la_Musica_Catalana_Barcelona.jpg"
     ]
   ],
   'Madrid': [
@@ -41,6 +51,16 @@ export const attractions = {
       "Plaza Mayor",
       "A beautiful arcaded square that has long been a centre of Madrid’s public life.",
       "Plaza_Mayor_de_Madrid_06.jpg"
+    ],
+    [
+      "Temple of Debod",
+      "An ancient Egyptian temple reconstructed in Madrid, surrounded by a park and reflecting pool.",
+      "Templo_de_Debod_Madrid.jpg"
+    ],
+    [
+      "Puerta del Sol",
+      "A lively central square known for its kilometre-zero marker and Bear and Strawberry Tree statue.",
+      "Puerta_del_Sol_Madrid.jpg"
     ]
   ],
   'Seville': [
@@ -63,6 +83,16 @@ export const attractions = {
       "Santa Cruz Quarter",
       "A historic neighbourhood of narrow lanes, orange trees and traditional houses.",
       "Barrio_de_Santa_Cruz_Sevilla.jpg"
+    ],
+    [
+      "Torre del Oro",
+      "A historic defensive tower beside the Guadalquivir River, now housing a maritime museum.",
+      "Torre_del_Oro_Sevilla.jpg"
+    ],
+    [
+      "Metropol Parasol",
+      "A striking wooden structure nicknamed Las Setas, with an elevated walkway above the old town.",
+      "Metropol_Parasol_Sevilla.jpg"
     ]
   ],
   'Granada': [
@@ -85,6 +115,16 @@ export const attractions = {
       "Granada Cathedral",
       "A Renaissance cathedral in the city centre with a monumental façade and grand interior.",
       "Granada_Cathedral_Spain.jpg"
+    ],
+    [
+      "Sacromonte",
+      "A hillside neighbourhood known for cave houses, flamenco traditions and views towards the Alhambra.",
+      "Sacromonte_Granada.jpg"
+    ],
+    [
+      "Royal Chapel of Granada",
+      "A Gothic chapel and burial place of the Catholic Monarchs, with important historic artworks.",
+      "Capilla_Real_de_Granada.jpg"
     ]
   ],
   'Valencia': [
@@ -107,6 +147,16 @@ export const attractions = {
       "Central Market",
       "A lively covered market in a beautiful building, filled with local produce and food stalls.",
       "Mercat_Central_de_València.jpg"
+    ],
+    [
+      "Oceanogràfic",
+      "A major aquarium within the City of Arts and Sciences, with marine habitats and modern buildings.",
+      "Oceanografic_Valencia.jpg"
+    ],
+    [
+      "Turia Gardens",
+      "A long green park in the former riverbed, with walking paths, cycling routes and gardens.",
+      "Jardin_del_Turia_Valencia.jpg"
     ]
   ],
   'Bilbao': [
@@ -129,6 +179,16 @@ export const attractions = {
       "Doña Casilda Park",
       "A leafy city park with paths, fountains and ponds.",
       "Parque_de_Doña_Casilda_Bilbao.jpg"
+    ],
+    [
+      "Bilbao Fine Arts Museum",
+      "A major art collection spanning older European painting through modern and contemporary works.",
+      "Museo_de_Bellas_Artes_de_Bilbao.jpg"
+    ],
+    [
+      "Azkuna Zentroa",
+      "A former warehouse turned cultural centre, known for unusual columns, exhibitions and cinema.",
+      "Azkuna_Zentroa_Bilbao.jpg"
     ]
   ],
   'Córdoba': [
@@ -151,6 +211,16 @@ export const attractions = {
       "Jewish Quarter",
       "A maze of narrow streets and traditional courtyards near the old city walls.",
       "Juderia_Cordoba_Spain.jpg"
+    ],
+    [
+      "Calleja de las Flores",
+      "A picturesque old-town lane with flower-filled balconies and a framed view of the Mezquita-Catedral.",
+      "Calleja_de_las_Flores_Cordoba.jpg"
+    ],
+    [
+      "Medina Azahara",
+      "The archaeological remains of a tenth-century palace city built near Córdoba by Caliph Abd al-Rahman III.",
+      "Medina_Azahara_Cordoba.jpg"
     ]
   ],
   'Málaga': [
@@ -173,6 +243,16 @@ export const attractions = {
       "Picasso Museum",
       "A museum dedicated to Pablo Picasso, who was born in Málaga.",
       "Museo_Picasso_Málaga.jpg"
+    ],
+    [
+      "Roman Theatre",
+      "An ancient theatre at the foot of the Alcazaba, revealing Málaga’s Roman history.",
+      "Teatro_Romano_Malaga.jpg"
+    ],
+    [
+      "Muelle Uno",
+      "A modern harbour promenade with public spaces, cafés and views towards the city.",
+      "Muelle_Uno_Malaga.jpg"
     ]
   ],
   'San Sebastián': [
@@ -195,6 +275,16 @@ export const attractions = {
       "Peine del Viento",
       "Seaside sculptures by Eduardo Chillida set among rocks at the edge of the sea.",
       "Peine_del_Viento_San_Sebastian.jpg"
+    ],
+    [
+      "Monte Urgull",
+      "A green hill above the Old Town with historic fortifications, paths and bay views.",
+      "Monte_Urgull_San_Sebastian.jpg"
+    ],
+    [
+      "Miramar Palace",
+      "A former royal summer residence with gardens overlooking La Concha Bay.",
+      "Palacio_de_Miramar_San_Sebastian.jpg"
     ]
   ],
   'Santiago de Compostela': [
@@ -217,6 +307,16 @@ export const attractions = {
       "Mercado de Abastos",
       "A traditional food market showcasing Galician produce and regional specialities.",
       "Mercado_de_Abastos_Santiago_de_Compostela.jpg"
+    ],
+    [
+      "Parque da Alameda",
+      "A leafy park near the old town with garden paths and views of the cathedral towers.",
+      "Parque_de_la_Alameda_Santiago.jpg"
+    ],
+    [
+      "Monastery of San Martiño Pinario",
+      "A monumental former Benedictine monastery near the cathedral, with an impressive façade and cloisters.",
+      "Mosteiro_de_San_Martino_Pinario.jpg"
     ]
   ],
   'Toledo': [
@@ -239,6 +339,16 @@ export const attractions = {
       "Mirador del Valle",
       "A viewpoint across the Tagus River with a panoramic view of Toledo’s skyline.",
       "Toledo_view_from_Mirador_del_Valle.jpg"
+    ],
+    [
+      "Synagogue of Santa María la Blanca",
+      "A historic monument to Toledo’s Jewish heritage, recognised for its white horseshoe arches.",
+      "Santa_Maria_la_Blanca_Toledo.jpg"
+    ],
+    [
+      "Mosque of Cristo de la Luz",
+      "A tenth-century former mosque preserving early Islamic architecture and later Christian additions.",
+      "Mezquita_del_Cristo_de_la_Luz_Toledo.jpg"
     ]
   ],
   'Zaragoza': [
@@ -261,6 +371,16 @@ export const attractions = {
       "Puente de Piedra",
       "A historic stone bridge across the Ebro with views of the Basilica del Pilar.",
       "Puente_de_Piedra_Zaragoza.jpg"
+    ],
+    [
+      "Caesaraugusta Roman Theatre Museum",
+      "A museum displaying remains of the Roman theatre and explaining Zaragoza’s ancient origins.",
+      "Museo_del_Teatro_de_Caesaraugusta.jpg"
+    ],
+    [
+      "Parque Grande José Antonio Labordeta",
+      "A large city park with tree-lined avenues, fountains, gardens and viewpoints.",
+      "Parque_Grande_Zaragoza.jpg"
     ]
   ]
 };
