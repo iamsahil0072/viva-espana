@@ -26,9 +26,9 @@ export const attractions = {
       "Montjuic_Barcelona.jpg"
     ],
     [
-      "Palau de la Música Catalana",
-      "Designed by Lluís Domènech i Montaner, the Palau de la Música Catalana is a celebrated concert hall and a UNESCO World Heritage Site. Its exterior combines sculpture, mosaics and decorative columns, while the auditorium is known for its spectacular stained-glass skylight. Guided visits explain the building’s Modernisme design and its role in Barcelona’s musical life. It remains an active venue for concerts.",
-      "Palau_de_la_Musica_Catalana_Barcelona.jpg"
+      "Spotify Camp Nou",
+      "Spotify Camp Nou is the home stadium of FC Barcelona and one of the most recognisable football venues in the world. Opened in 1957, it has been closely connected with the club’s history and identity for generations. The stadium has undergone a major redevelopment, bringing updated facilities and a redesigned spectator experience. Visitors can discover the club’s story through its museum and stadium experiences. For football fans, it is an important stop in Barcelona.",
+      "Spotify_Camp_Nou_Barcelona.jpg"
     ]
   ],
   'Madrid': [
@@ -58,9 +58,9 @@ export const attractions = {
       "Templo_de_Debod_Madrid.jpg"
     ],
     [
-      "Puerta del Sol",
-      "Puerta del Sol is one of Madrid’s busiest and most recognisable public squares. It is home to the Kilometre Zero plaque, from which Spain’s major radial roads are measured, and the famous statue of the Bear and the Strawberry Tree. The square is also associated with New Year celebrations and the clock whose chimes mark midnight. Its central location makes it a natural starting point for exploring Madrid.",
-      "Puerta_del_Sol_Madrid.jpg"
+      "Santiago Bernabéu Stadium",
+      "The Santiago Bernabéu Stadium is the home ground of Real Madrid and one of the best-known football stadiums in the world. It first opened in 1947 and was named after the club’s former president, Santiago Bernabéu. A major modernisation has given the stadium a distinctive new exterior, a retractable roof and updated visitor facilities. The Bernabéu Tour lets visitors explore the club’s history, trophies and stadium spaces. It is a must-see landmark for football fans visiting Madrid.",
+      "Santiago_Bernabeu_Stadium_Madrid.jpg"
     ]
   ],
   'Seville': [
