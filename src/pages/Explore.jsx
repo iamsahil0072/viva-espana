@@ -13,6 +13,12 @@ function AttractionImage({ placeName, cityName, fallbackImage }) {
     setImageUrl('');
     setUsingFallback(false);
 
+    // Use a verified stadium photograph for Spotify Camp Nou, not the club crest.
+    if (placeName === 'Spotify Camp Nou') {
+      setImageUrl('https://commons.wikimedia.org/wiki/Special:FilePath/CampNouExterior.JPG?width=900');
+      return () => { active = false; };
+    }
+
     const loadPhoto = async () => {
       // First try Wikipedia's page-image service for a photo of this exact landmark.
       try {
