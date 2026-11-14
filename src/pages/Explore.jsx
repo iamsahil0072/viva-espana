@@ -13,9 +13,19 @@ function AttractionImage({ placeName, cityName, fallbackImage }) {
     setImageUrl('');
     setUsingFallback(false);
 
-    // Use a verified stadium photograph for Spotify Camp Nou, not the club crest.
-    if (placeName === 'Spotify Camp Nou') {
-      setImageUrl('https://commons.wikimedia.org/wiki/Special:FilePath/CampNouExterior.JPG?width=900');
+    // Curated Commons photographs for landmarks where broad search returned mismatched images.
+    const verifiedPhotos = {
+      'Spotify Camp Nou': 'CampNouExterior.JPG',
+      'Real Alcázar': 'Real Alcázar - Sevilla.jpg',
+      'Seville Cathedral & Giralda': 'Sevilla Cathedral - Giralda.jpg',
+      'Plaza de España': 'PLAZA ESPAÑA, SEVILLA.jpg',
+      'Santa Cruz Quarter': 'Iglesia de Santa Cruz from the Giralda - Seville.JPG',
+      'Torre del Oro': 'Torre del oro, Sevilla.jpg',
+      'Metropol Parasol': 'Metropol Parasol Plaza de la Encarnación 1.jpg'
+    };
+    const verifiedFile = verifiedPhotos[placeName];
+    if (verifiedFile) {
+      setImageUrl(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(verifiedFile)}?width=900`);
       return () => { active = false; };
     }
 
