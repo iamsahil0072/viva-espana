@@ -8,5 +8,12 @@ export const landmarkImages = {
   "Granada|The Alhambra": "https://images.unsplash.com/photo-1770288361252-df2f7e6e3069?auto=format&fit=crop&w=900&q=85",
   "Valencia|City of Arts and Sciences": "https://images.unsplash.com/photo-1763569482220-7b7b68a40c9a?auto=format&fit=crop&w=900&q=85",
   "Bilbao|Guggenheim Museum": "https://images.unsplash.com/photo-1745786873673-9d7509ed0184?auto=format&fit=crop&w=900&q=85",
-  "Toledo|Mirador del Valle": "https://images.unsplash.com/photo-1772037301349-804afee79772?auto=format&fit=crop&w=900&q=85"
+  "Toledo|Mirador del Valle": "https://images.unsplash.com/photo-1772037301349-804afee79772?auto=format&fit=crop&w=900&q=85",
+  "Barcelona|Park Güell": "https://images.unsplash.com/photo-1792768292559-ccb4cb7232d6?auto=format&fit=crop&w=900&q=85",
+  "Seville|Plaza de España": "https://images.unsplash.com/photo-1793090660850-333f38e0f41c?auto=format&fit=crop&w=900&q=85",
+  "Granada|Generalife Gardens": "https://images.unsplash.com/photo-1665247660954-84dec71753b9?auto=format&fit=crop&w=900&q=85",
+  "Granada|Albaicín": "https://images.unsplash.com/photo-1646303168064-22af05e0f494?auto=format&fit=crop&w=900&q=85",
+  "Málaga|Alcazaba": "https://images.unsplash.com/photo-1615839130907-2f68ca162d44?auto=format&fit=crop&w=900&q=85",
+  "Málaga|Gibralfaro Castle": "https://images.unsplash.com/photo-1560801514-a78bdf3a8a08?auto=format&fit=crop&w=900&q=85",
+  "Málaga|Málaga Cathedral": "https://images.unsplash.com/photo-1792317227096-155e09f4013a?auto=format&fit=crop&w=900&q=85"
 };
