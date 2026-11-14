@@ -19,16 +19,6 @@ export const attractions = {
       "Gothic Quarter",
       "Barcelona’s Gothic Quarter forms part of the city’s oldest centre, where narrow medieval streets open into quiet squares. The area includes Barcelona Cathedral, historic buildings and traces of the Roman settlement of Barcino. Visitors can explore small courtyards, artisan shops and lively cafés while noticing the contrast between ancient walls and modern city life. It is best discovered slowly on foot.",
       "Barcelona_Cathedral_-_Barcelona,_Spain_-_Jan_2013.jpg"
-    ],
-    [
-      "Montjuïc",
-      "Montjuïc rises above Barcelona’s port and offers a mix of history, gardens and cultural attractions. Montjuïc Castle stands at the summit, while the hillside also contains museums, parks and venues built for major international events. Visitors can explore the gardens, see views over the harbour and city, or visit the museums around Plaça d’Espanya. The hill provides a quieter contrast to the busy centre.",
-      "Montjuic_Barcelona.jpg"
-    ],
-    [
-      "Spotify Camp Nou",
-      "Spotify Camp Nou is the home stadium of FC Barcelona and one of the most recognisable football venues in the world. Opened in 1957, it has been closely connected with the club’s history and identity for generations. The stadium has undergone a major redevelopment, bringing updated facilities and a redesigned spectator experience. Visitors can discover the club’s story through its museum and stadium experiences. For football fans, it is an important stop in Barcelona.",
-      "Spotify_Camp_Nou_Barcelona.jpg"
     ]
   ],
   'Madrid': [
@@ -51,16 +41,6 @@ export const attractions = {
       "Plaza Mayor",
       "Plaza Mayor is one of Madrid’s best-known historic squares, surrounded by uniform red façades and arcaded walkways. It has served as a setting for markets, public celebrations and important events over several centuries. The statue of King Philip III stands at its centre. Today, visitors come to admire the architecture, sit at outdoor cafés and explore the small streets leading into the old town.",
       "Plaza_Mayor_de_Madrid_06.jpg"
-    ],
-    [
-      "Temple of Debod",
-      "The Temple of Debod is an ancient Egyptian temple dating back more than two thousand years. Egypt gifted it to Spain in recognition of assistance with the preservation of monuments threatened by the construction of the Aswan High Dam. It was carefully reconstructed in Parque del Oeste, near Plaza de España. The surrounding gardens and reflecting pool make this an unusual historic site in Madrid.",
-      "Templo_de_Debod_Madrid.jpg"
-    ],
-    [
-      "Santiago Bernabéu Stadium",
-      "The Santiago Bernabéu Stadium is the home ground of Real Madrid and one of the best-known football stadiums in the world. It first opened in 1947 and was named after the club’s former president, Santiago Bernabéu. A major modernisation has given the stadium a distinctive new exterior, a retractable roof and updated visitor facilities. The Bernabéu Tour lets visitors explore the club’s history, trophies and stadium spaces. It is a must-see landmark for football fans visiting Madrid.",
-      "Santiago_Bernabeu_Stadium_Madrid.jpg"
     ]
   ],
   'Seville': [
@@ -83,16 +63,6 @@ export const attractions = {
       "Santa Cruz Quarter",
       "Santa Cruz is the historic former Jewish quarter of Seville, located close to the cathedral and Alcázar. Its narrow lanes, whitewashed houses, flower-filled patios and small squares create a distinctive atmosphere. The neighbourhood is full of hidden corners, traditional cafés and shaded places to pause. Exploring on foot reveals layers of the city’s past and provides a contrast to Seville’s larger monuments.",
       "Barrio_de_Santa_Cruz_Sevilla.jpg"
-    ],
-    [
-      "Torre del Oro",
-      "The Torre del Oro is a historic watchtower on the bank of the Guadalquivir River. It formed part of Seville’s medieval defensive system and helped control access along the river. The tower’s name is often linked to the golden appearance of its original exterior decoration. Today it contains a small maritime museum, and the riverside location offers pleasant views of bridges, boats and the city.",
-      "Torre_del_Oro_Sevilla.jpg"
-    ],
-    [
-      "Metropol Parasol",
-      "Metropol Parasol, widely known as Las Setas, is a striking contemporary structure in central Seville. Its large wooden canopy shelters a market and public spaces, while an elevated walkway provides views across the historic rooftops. The design creates a bold contrast with the nearby traditional streets and monuments. Visitors can explore the structure from below or walk along the upper route for a different perspective of the city.",
-      "Metropol_Parasol_Sevilla.jpg"
     ]
   ],
   'Granada': [
@@ -115,16 +85,6 @@ export const attractions = {
       "Granada Cathedral",
       "Granada Cathedral is a major Renaissance monument in the heart of the city. Its construction began in the sixteenth century, and its design reflects the changing artistic ambitions of the period. The spacious interior, tall columns, chapels and detailed decorative work make it an important architectural landmark. Its location near the Royal Chapel and historic shopping streets makes it easy to include in a walking tour.",
       "Granada_Cathedral_Spain.jpg"
-    ],
-    [
-      "Sacromonte",
-      "Sacromonte is a hillside district traditionally associated with Granada’s Roma community and cave dwellings. Some caves have been adapted as homes, museums and intimate flamenco venues. The neighbourhood’s elevated paths provide views across the Alhambra and the city. Visitors can learn about local music traditions and the history of cave life while exploring the area respectfully and enjoying its distinctive landscape.",
-      "Sacromonte_Granada.jpg"
-    ],
-    [
-      "Royal Chapel of Granada",
-      "The Royal Chapel of Granada is the burial place of Queen Isabella I of Castile and King Ferdinand II of Aragon. Built in Gothic style, it contains royal tombs, religious artworks and objects connected with the Catholic Monarchs. The chapel stands beside Granada Cathedral and forms an important part of the city’s history following the end of Nasrid rule. Its interior offers insight into Spain’s late-medieval monarchy.",
-      "Capilla_Real_de_Granada.jpg"
     ]
   ],
   'Valencia': [
@@ -147,16 +107,6 @@ export const attractions = {
       "Central Market",
       "Valencia’s Central Market is one of Europe’s notable historic food markets, housed in an elaborate Modernista building. Its stalls display fresh fruit, vegetables, seafood, meats, cheeses and regional specialities. The colourful stained glass, ironwork and tiled details make the architecture worth seeing as well as the food. Visitors can experience everyday local life, discover Valencian ingredients and sample products from the surrounding region.",
       "Mercat_Central_de_València.jpg"
-    ],
-    [
-      "Oceanogràfic",
-      "Oceanogràfic is a large marine centre within Valencia’s City of Arts and Sciences. Its themed environments represent different aquatic habitats, allowing visitors to learn about marine biodiversity and the importance of ocean conservation. The architecture includes distinctive curved structures and underwater viewing areas. It is a popular family attraction and can be combined with the nearby science museum and other buildings in the complex.",
-      "Oceanografic_Valencia.jpg"
-    ],
-    [
-      "Turia Gardens",
-      "The Turia Gardens follow the former course of the Turia River, which was diverted after severe flooding in 1957. The old riverbed has become a long green corridor crossing much of Valencia. Its paths are used for walking, cycling and outdoor activities, while gardens, sports areas and bridges connect different neighbourhoods. The park provides a relaxing route through the city and links several major attractions.",
-      "Jardin_del_Turia_Valencia.jpg"
     ]
   ],
   'Bilbao': [
@@ -179,16 +129,6 @@ export const attractions = {
       "Doña Casilda Park",
       "Doña Casilda Iturrizar Park is one of Bilbao’s best-loved green spaces. Its tree-lined paths, fountains, ponds and landscaped gardens provide a peaceful place to relax between visits to the city’s museums and shopping areas. The park is also close to cultural institutions and broad avenues. Visitors can enjoy a quiet walk, watch the ducks around the pond or simply take a break from the urban centre.",
       "Parque_de_Doña_Casilda_Bilbao.jpg"
-    ],
-    [
-      "Bilbao Fine Arts Museum",
-      "The Bilbao Fine Arts Museum presents a wide-ranging collection that spans older European painting, Basque art and modern works. Its galleries allow visitors to explore different artistic periods and styles in one place. The museum is located near Doña Casilda Park, making it easy to combine culture with a walk through the gardens. It provides useful context for understanding the artistic heritage of the Basque Country.",
-      "Museo_de_Bellas_Artes_de_Bilbao.jpg"
-    ],
-    [
-      "Azkuna Zentroa",
-      "Azkuna Zentroa is a former wine warehouse transformed into a contemporary cultural centre by designer Philippe Starck. Its interior is especially memorable for a hall supported by columns, each with a different design. The building hosts exhibitions, cinema, performances, workshops and public activities. Visitors can explore its shared spaces and discover how an industrial building has been adapted for modern cultural life.",
-      "Azkuna_Zentroa_Bilbao.jpg"
     ]
   ],
   'Córdoba': [
@@ -211,16 +151,6 @@ export const attractions = {
       "Jewish Quarter",
       "Córdoba’s Jewish Quarter is a network of narrow streets close to the Mezquita-Catedral. Its whitewashed houses, small squares and flower-filled patios preserve the character of the historic centre. The neighbourhood includes the medieval synagogue and traditional craft shops. Walking through the lanes helps visitors understand Córdoba’s multicultural past and discover quiet corners away from the main monuments.",
       "Juderia_Cordoba_Spain.jpg"
-    ],
-    [
-      "Calleja de las Flores",
-      "Calleja de las Flores is a narrow, picturesque lane in Córdoba’s old town. Its white walls are decorated with flower-filled balconies and pots, and the lane opens towards a carefully framed view of the Mezquita-Catedral tower. The street is small but memorable, showing the importance of patios and flowers in local architecture. It is a popular place for photographs during a walk through the Jewish Quarter.",
-      "Calleja_de_las_Flores_Cordoba.jpg"
-    ],
-    [
-      "Medina Azahara",
-      "Medina Azahara is an archaeological site on the outskirts of Córdoba, where the remains of a tenth-century palace city can be explored. It was built by the Umayyad caliph Abd al-Rahman III as a seat of government and a symbol of power. Excavated terraces, halls and decorative fragments reveal the scale of the complex. The site museum helps explain its history and significance.",
-      "Medina_Azahara_Cordoba.jpg"
     ]
   ],
   'Málaga': [
@@ -243,16 +173,6 @@ export const attractions = {
       "Picasso Museum",
       "The Picasso Museum Málaga celebrates the life and work of Pablo Picasso, who was born in the city in 1881. Located in the historic Buenavista Palace, the museum displays works from different stages of his career and offers insight into his changing styles. The building itself is part of Málaga’s historic centre. Visitors can connect the artist’s international reputation with his early ties to the city.",
       "Museo_Picasso_Málaga.jpg"
-    ],
-    [
-      "Roman Theatre",
-      "Málaga’s Roman Theatre lies at the foot of the Alcazaba and dates to the first century BCE. Its surviving seating and stage area provide a glimpse into entertainment and public life in the Roman city. The theatre was rediscovered in the twentieth century and is now an important archaeological landmark. Its location beside the Moorish fortress makes it easy to see different chapters of Málaga’s history together.",
-      "Teatro_Romano_Malaga.jpg"
-    ],
-    [
-      "Muelle Uno",
-      "Muelle Uno is a modern waterfront promenade beside Málaga’s port. It combines open pedestrian spaces with cafés, shops and places to sit overlooking the harbour. The Centre Pompidou Málaga, recognised by its colourful cube structure, is nearby. Visitors can enjoy views of boats and the Mediterranean, then walk towards the historic centre or the beach. It is a relaxed way to experience the city’s seaside atmosphere.",
-      "Muelle_Uno_Malaga.jpg"
     ]
   ],
   'San Sebastián': [
@@ -275,16 +195,6 @@ export const attractions = {
       "Peine del Viento",
       "Peine del Viento, or “Comb of the Wind,” is a group of sculptures by Basque artist Eduardo Chillida, installed among rocks at the western edge of the city. The steel forms interact with the sea, waves and changing weather. The surrounding coastal setting is an important part of the artwork. Visitors can watch the water and experience how sculpture and landscape come together.",
       "Peine_del_Viento_San_Sebastian.jpg"
-    ],
-    [
-      "Monte Urgull",
-      "Monte Urgull rises behind San Sebastián’s Old Town and is covered with walking paths, trees and historic fortifications. The hill played a defensive role in the city’s past, and remains of its walls and batteries can still be seen. At the summit stands a statue of Christ overlooking the bay. Several paths lead to viewpoints where visitors can look across the beaches and harbour.",
-      "Monte_Urgull_San_Sebastian.jpg"
-    ],
-    [
-      "Miramar Palace",
-      "Miramar Palace was built as a summer residence for the Spanish royal family and stands between La Concha and Ondarreta beaches. Its English-style architecture and landscaped gardens create a peaceful setting above the water. The grounds are open to the public and offer beautiful views across the bay towards Santa Clara Island. It is a lovely place to pause during a coastal walk.",
-      "Palacio_de_Miramar_San_Sebastian.jpg"
     ]
   ],
   'Santiago de Compostela': [
@@ -307,16 +217,6 @@ export const attractions = {
       "Mercado de Abastos",
       "Santiago’s Mercado de Abastos is the city’s traditional food market and an excellent place to discover Galician produce. Stalls offer seafood, fish, cheeses, vegetables, meats and regional specialities. The market is part of everyday local life, not just a visitor attraction. Walking through its halls provides a sense of the region’s food culture and the ingredients used in Galician cooking.",
       "Mercado_de_Abastos_Santiago_de_Compostela.jpg"
-    ],
-    [
-      "Parque da Alameda",
-      "Parque da Alameda is a historic green space close to Santiago’s old town. Its tree-lined paths, gardens and open viewpoints make it a popular place for a peaceful walk. One of its best-known views looks towards the cathedral towers rising above the historic rooftops. The park is especially pleasant for taking a break after exploring the city’s stone streets and monuments.",
-      "Parque_de_la_Alameda_Santiago.jpg"
-    ],
-    [
-      "Monastery of San Martiño Pinario",
-      "The Monastery of San Martiño Pinario is a large former Benedictine monastery located close to Santiago Cathedral. Its monumental façade and extensive historic complex reflect the influence of monastic life in Galicia. Parts of the building contain religious art, cloisters and spaces associated with its long history. Visitors can appreciate its scale and architectural details while exploring the cathedral quarter.",
-      "Mosteiro_de_San_Martino_Pinario.jpg"
     ]
   ],
   'Toledo': [
@@ -339,16 +239,6 @@ export const attractions = {
       "Mirador del Valle",
       "Mirador del Valle is a viewpoint across the Tagus River, offering one of the most famous panoramic views of Toledo. From here, visitors can see the Alcázar, cathedral towers, city walls and the dense historic centre rising above the river. It is especially popular for photography because the whole hilltop city can be seen at once. The viewpoint helps explain Toledo’s dramatic landscape and defensive setting.",
       "Toledo_view_from_Mirador_del_Valle.jpg"
-    ],
-    [
-      "Synagogue of Santa María la Blanca",
-      "Santa María la Blanca is a historic building that reflects Toledo’s Jewish heritage and the city’s shared cultural history. Its interior is recognised for rows of white horseshoe arches and distinctive Mudéjar design. Built as a synagogue, it later served other religious purposes and is now preserved as a monument. Visitors can appreciate its calm interior and the architectural traditions that shaped medieval Toledo.",
-      "Santa_Maria_la_Blanca_Toledo.jpg"
-    ],
-    [
-      "Mosque of Cristo de la Luz",
-      "The Mosque of Cristo de la Luz is a small but important monument dating from the tenth century. Its compact structure preserves early Islamic architecture, including brick arches and a series of vaulted spaces. After the Christian conquest of Toledo, the building was adapted for use as a church. The site offers a clear example of how different cultural and religious periods overlap in the city.",
-      "Mezquita_del_Cristo_de_la_Luz_Toledo.jpg"
     ]
   ],
   'Zaragoza': [
@@ -371,16 +261,6 @@ export const attractions = {
       "Puente de Piedra",
       "Puente de Piedra is a historic stone bridge crossing the Ebro River in Zaragoza. The bridge provides a classic view of the Basílica del Pilar and connects the old city with the northern riverbank. Its origins go back to earlier crossings, although the present structure has been repaired and altered over time. Walking across it is a simple way to enjoy the city’s riverfront scenery.",
       "Puente_de_Piedra_Zaragoza.jpg"
-    ],
-    [
-      "Caesaraugusta Roman Theatre Museum",
-      "The Caesaraugusta Roman Theatre Museum preserves the remains of Zaragoza’s ancient Roman theatre. Visitors can see sections of the seating and stage area while learning how the theatre was used for public performances in the Roman city. Exhibitions explain the history of Caesaraugusta and everyday life in the empire. The museum helps connect modern Zaragoza with its origins as a Roman settlement.",
-      "Museo_del_Teatro_de_Caesaraugusta.jpg"
-    ],
-    [
-      "Parque Grande José Antonio Labordeta",
-      "Parque Grande José Antonio Labordeta is one of Zaragoza’s largest and most attractive green spaces. Its broad avenues, fountains, gardens and shaded paths make it a popular place for walking and relaxing. The park includes monuments and landscaped areas that reflect different styles of garden design. Visitors can enjoy a break from the historic centre and explore a quieter side of the city.",
-      "Parque_Grande_Zaragoza.jpg"
     ]
   ]
 };
