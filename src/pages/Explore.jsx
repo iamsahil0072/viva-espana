@@ -13,31 +13,24 @@ function AttractionImage({ placeName, cityName, fallbackImage }) {
     setImageUrl('');
     setUsingFallback(false);
 
-    // Curated Commons photographs for landmarks where broad search returned mismatched images.
-    const verifiedPhotos = {
-      'Spotify Camp Nou': 'CampNouExterior.JPG',
-      'Real Alcázar': 'Real Alcázar - Sevilla.jpg',
-      'Seville Cathedral & Giralda': 'Sevilla Cathedral - Giralda.jpg',
-      'Plaza de España': 'PLAZA ESPAÑA, SEVILLA.jpg',
-      'Santa Cruz Quarter': 'Iglesia de Santa Cruz from the Giralda - Seville.JPG',
-      'Torre del Oro': 'Torre del oro, Sevilla.jpg',
-      'Metropol Parasol': 'Metropol Parasol Plaza de la Encarnación 1.jpg'
+    // Resolve a landmark's own encyclopedia page, not the first result for the whole city.
+    const wikipediaTitles = {
+      'The Alhambra': 'Alhambra',
+      'Generalife Gardens': 'Generalife',
+      'Real Alcázar': 'Alcázar of Seville',
+      'Seville Cathedral & Giralda': 'Seville Cathedral',
+      'Spotify Camp Nou': 'Camp Nou'
     };
-    const verifiedFile = verifiedPhotos[placeName];
-    if (verifiedFile) {
-      setImageUrl(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(verifiedFile)}?width=900`);
-      return () => { active = false; };
-    }
+    const pageTitle = wikipediaTitles[placeName] || placeName;
+
 
     const loadPhoto = async () => {
       // First try Wikipedia's page-image service for a photo of this exact landmark.
       try {
         const wikiParams = new URLSearchParams({
           action: 'query',
-          generator: 'search',
-          gsrsearch: `${placeName} ${cityName} Spain`,
-          gsrnamespace: '0',
-          gsrlimit: '6',
+          titles: pageTitle,
+          redirects: '1',
           prop: 'pageimages',
           piprop: 'thumbnail',
           pithumbsize: '900',
