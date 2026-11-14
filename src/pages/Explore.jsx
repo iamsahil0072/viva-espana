@@ -14,12 +14,17 @@ function AttractionImage({ placeName, cityName }) {
     setFailed(false);
     const search = async () => {
       try {
+        const isBernabeu = placeName === 'Santiago Bernabéu Stadium';
         const params = new URLSearchParams({
           action: 'query',
-          generator: 'search',
-          gsrsearch: `\u0022${placeName}\u0022 ${cityName}`,
-          gsrnamespace: '6',
-          gsrlimit: '8',
+          ...(isBernabeu
+            ? { titles: 'File:Estadio Santiago Bernabéu Fachada.jpg' }
+            : {
+                generator: 'search',
+                gsrsearch: `\u0022${placeName}\u0022 ${cityName}`,
+                gsrnamespace: '6',
+                gsrlimit: '8'
+              }),
           prop: 'imageinfo',
           iiprop: 'url',
           iiurlwidth: '900',
