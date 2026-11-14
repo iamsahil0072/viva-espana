@@ -27,4 +27,6 @@ export const landmarkImages = {
   "Córdoba|Mezquita-Catedral": "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?auto=format&fit=crop&w=900&q=85",
   "Córdoba|Roman Bridge": "https://images.unsplash.com/photo-1653573986346-8222474c3f8a?auto=format&fit=crop&w=900&q=85",
   "Málaga|Picasso Museum": "https://images.unsplash.com/photo-1730236828675-955b35c66d66?auto=format&fit=crop&w=900&q=85"
+  "Córdoba|Alcázar de los Reyes Cristianos": "https://commons.wikimedia.org/wiki/Special:FilePath/Alc%C3%A1zar_de_los_Reyes_Cristianos%2C_Cordoba.jpg?width=900",
+  "Córdoba|Jewish Quarter": "https://commons.wikimedia.org/wiki/Special:FilePath/Juderia_-_Cordoba%2C_Spain_%2811174771356%29.jpg?width=900"
 };
