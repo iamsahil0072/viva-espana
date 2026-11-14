@@ -1,0 +1,37 @@
+name: Download 72 landmark photos from Wikimedia Commons
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/download-landmark-photos.yml'
+      - 'scripts/download-landmark-photos.js'
+      - 'src/attractions.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Download unique, licensed landmark photos
+        run: node scripts/download-landmark-photos.js
+      - name: Build website
+        run: |
+          npm install
+          npm run build
+      - name: Commit downloaded images and attribution
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/images src/landmarkImages.js
+          git diff --cached --quiet || git commit -m "Add 72 unique Wikimedia landmark photos"
+          git push
