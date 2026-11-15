@@ -27,7 +27,7 @@ export default function About(){
     </section>
     <section className="project-credit">
       <div><span className="eyebrow">PROJECT DETAILS</span><h2>A little project, a lot to discover.</h2><p>Created as part of a Spanish language learning project.</p></div>
-      <div className="project-credit-details"><p><b>Student</b><span>Sahil Kumar</span></p><p><b>Institution</b><span>SRM Institute of Science and Technology</span></p><p><b>Subject</b><span>Spanish</span></p></div>
+      <div className="project-credit-details"><p><b>Student</b><span>Sahil Kumar (RA2611026010539)</span></p><p><b>Institution</b><span>SRM Institute of Science and Technology</span></p><p><b>Subject</b><span>Spanish</span></p></div>
     </section>
   </main>
 }
